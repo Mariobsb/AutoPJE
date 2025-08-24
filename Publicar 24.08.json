@@ -1,0 +1,263 @@
+{
+    "title": "Publicar 24.08",
+    "selectorAttribute": "Sem travar...",
+    "steps": [
+        {
+            "type": "emulateNetworkConditions",
+            "download": 180000,
+            "upload": 84375,
+            "latency": 562.5
+        },
+        {
+            "type": "setViewport",
+            "width": 1920,
+            "height": 911,
+            "deviceScaleFactor": 1,
+            "isMobile": false,
+            "hasTouch": false,
+            "isLandscape": false
+        },
+        {
+            "type": "navigate",
+            "url": "https://sso.cloud.pje.jus.br/auth/realms/pje/protocol/openid-connect/auth?response_type=code&client_id=pje-tjdft-1g&redirect_uri=https%3A%2F%2Fpje.tjdft.jus.br%2Fpje%2Flogin.seam%3Bjsessionid%3DajK0pVyQqLniwCEIBMChmDtrFHbe7hsAfXSdAQ3b.hc-zdu112%3Apje-internet-zdu112?cid%3D48768&state=2621f49b-2e6b-493e-bf10-0e31bba34988&login=true&scope=openid",
+            "assertedEvents": [
+                {
+                    "type": "navigation",
+                    "url": "https://sso.cloud.pje.jus.br/auth/realms/pje/protocol/openid-connect/auth?response_type=code&client_id=pje-tjdft-1g&redirect_uri=https%3A%2F%2Fpje.tjdft.jus.br%2Fpje%2Flogin.seam%3Bjsessionid%3DajK0pVyQqLniwCEIBMChmDtrFHbe7hsAfXSdAQ3b.hc-zdu112%3Apje-internet-zdu112?cid%3D48768&state=2621f49b-2e6b-493e-bf10-0e31bba34988&login=true&scope=openid",
+                    "title": "Bem vindo ao PJe . Processo Judicial Eletrônico - 1° Grau"
+                }
+            ]
+        },
+        {
+            "type": "click",
+            "target": "main",
+            "selectors": [
+                [
+                    "#kc-pje-office"
+                ],
+                [
+                    "xpath///*[@id=\"kc-pje-office\"]"
+                ],
+                [
+                    "pierce/#kc-pje-office"
+                ],
+                [
+                    "aria/CERTIFICADO DIGITAL"
+                ],
+                [
+                    "text/CERTIFICADO DIGITAL"
+                ]
+            ],
+            "offsetY": 20.390625,
+            "offsetX": 159,
+            "assertedEvents": [
+                {
+                    "type": "navigation",
+                    "url": "https://pje.tjdft.jus.br/pje/QuadroAviso/listViewQuadroAvisoMensagem.seam",
+                    "title": ""
+                }
+            ]
+        },
+        {
+            "type": "click",
+            "target": "main",
+            "selectors": [
+                [
+                    "#popupAlertaCertificadoProximoDeExpirarContainer i"
+                ],
+                [
+                    "xpath///*[@id=\"j_id146\"]/span/i"
+                ],
+                [
+                    "pierce/#popupAlertaCertificadoProximoDeExpirarContainer i"
+                ]
+            ],
+            "offsetY": 3.359375,
+            "offsetX": 11.359375
+        },
+        {
+            "type": "click",
+            "target": "main",
+            "selectors": [
+                [
+                    "input[type='submit']"
+                ],
+                [
+                    "xpath///*[@id=\"j_id215\"]/input[1]"
+                ],
+                [
+                    "pierce/input[type='submit']"
+                ],
+                [
+                    "aria/Painel do usuário[role=\"button\"]"
+                ]
+            ],
+            "offsetY": 14.40625,
+            "offsetX": 77.5625,
+            "assertedEvents": [
+                {
+                    "type": "navigation",
+                    "url": "https://pje.tjdft.jus.br/pje/ng2/dev.seam#/painel-usuario-interno",
+                    "title": ""
+                }
+            ]
+        },
+        {
+            "type": "click",
+            "target": "main",
+            "selectors": [
+                [
+                    "#divRightPanel div:nth-of-type(52) span.nome"
+                ],
+                [
+                    "xpath///*[@id=\"divTarefasPendentes\"]/div[4]/div[52]/div/a/div/span[1]"
+                ],
+                [
+                    "pierce/#divRightPanel div:nth-of-type(52) span.nome"
+                ]
+            ],
+            "offsetY": 5.828125,
+            "offsetX": 124.59375,
+            "frame": [
+                0
+            ]
+        },
+        {
+            "type": "click",
+            "target": "main",
+            "selectors": [
+                [
+                    "#processosTarefa > div i"
+                ],
+                [
+                    "xpath///*[@id=\"acoes-processos-selecionados\"]/div/div/button/i"
+                ],
+                [
+                    "pierce/#processosTarefa > div i"
+                ]
+            ],
+            "offsetY": 3.3125,
+            "offsetX": 4.6875,
+            "frame": [
+                0
+            ]
+        },
+        {
+            "type": "click",
+            "target": "main",
+            "selectors": [
+                [
+                    "div.lista-processos button:nth-of-type(2)"
+                ],
+                [
+                    "xpath///*[@id=\"acoes-processos-selecionados\"]/div/div/button[2]"
+                ],
+                [
+                    "pierce/div.lista-processos button:nth-of-type(2)"
+                ],
+                [
+                    "aria/Movimentar em lote"
+                ]
+            ],
+            "offsetY": 2.3125,
+            "offsetX": 9.375,
+            "frame": [
+                0
+            ]
+        },
+        {
+            "type": "click",
+            "target": "main",
+            "selectors": [
+                [
+                    "#transicoes"
+                ],
+                [
+                    "xpath///*[@id=\"transicoes\"]"
+                ],
+                [
+                    "pierce/#transicoes"
+                ],
+                [
+                    "aria/Transições"
+                ]
+            ],
+            "offsetY": 18,
+            "offsetX": 227.5,
+            "frame": [
+                0
+            ]
+        },
+        {
+            "type": "change",
+            "value": "Enviar para disponibilização no DJE",
+            "selectors": [
+                [
+                    "#transicoes"
+                ],
+                [
+                    "xpath///*[@id=\"transicoes\"]"
+                ],
+                [
+                    "pierce/#transicoes"
+                ],
+                [
+                    "aria/Transições"
+                ]
+            ],
+            "frame": [
+                0
+            ],
+            "target": "main"
+        },
+        {
+            "type": "click",
+            "target": "main",
+            "selectors": [
+                [
+                    "movimentar-lote button.btn-default"
+                ],
+                [
+                    "xpath///*[@id=\"modalMovimentarEmLote\"]/div/div/div[3]/div/button[1]"
+                ],
+                [
+                    "pierce/movimentar-lote button.btn-default"
+                ],
+                [
+                    "aria/MOVIMENTAR"
+                ],
+                [
+                    "text/Movimentar"
+                ]
+            ],
+            "offsetY": 10,
+            "offsetX": 35.109375,
+            "frame": [
+                0
+            ]
+        },
+        {
+            "type": "click",
+            "target": "main",
+            "selectors": [
+                [
+                    "movimentar-lote button.btn-danger"
+                ],
+                [
+                    "xpath///*[@id=\"modalMovimentarEmLote\"]/div/div/div[3]/div[2]/button[2]"
+                ],
+                [
+                    "pierce/movimentar-lote button.btn-danger"
+                ],
+                [
+                    "aria/FECHAR"
+                ]
+            ],
+            "offsetY": 17,
+            "offsetX": 46.953125,
+            "frame": [
+                0
+            ]
+        }
+    ]
+}

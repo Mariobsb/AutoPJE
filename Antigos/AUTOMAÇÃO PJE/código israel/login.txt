@@ -1,0 +1,3 @@
+options = ChromeOptions()
+options.add_argument(r'--user-data-dir=C:\Users\xxxxx\AppData\Local\Google\Chrome/perfil_testes')
+webdriver = Chrome(options=options)

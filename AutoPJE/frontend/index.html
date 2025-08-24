@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>PJe – Painel de Automação</title>
+  <style>
+    body{font-family:system-ui,Segoe UI,Arial,sans-serif;margin:20px}
+    .wrap{max-width:900px;margin:auto}
+    button{padding:10px 16px;border:0;border-radius:8px;cursor:pointer}
+    .primary{background:#0b5cff;color:#fff}
+    .card{border:1px solid #e5e7eb;border-radius:12px;padding:16px;margin-top:16px}
+    #log{white-space:pre-wrap;font-family:ui-monospace,Consolas,monospace;height:320px;overflow:auto}
+    .row{display:flex;gap:10px;flex-wrap:wrap}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <h1>Automação PJe</h1>
+    <div class="row">
+      <button id="btn-login" class="primary">Fazer login (certificado)</button>
+      <button id="btn-clear">Limpar log</button>
+    </div>
+
+    <div class="card">
+      <strong>Log</strong>
+      <div id="log"></div>
+    </div>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>

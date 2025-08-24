@@ -1,0 +1,58 @@
+{
+  "id": "5509b6bc-9b31-4673-989e-88262ffa858c",
+  "version": "2.0",
+  "name": "clique no botão certificado digital",
+  "url": "https://pje.tjdft.jus.br",
+  "tests": [{
+    "id": "e1de1267-7247-4adb-b141-7adbc699f8ea",
+    "name": "Login PJE com assinatura digital",
+    "commands": [{
+      "id": "3a9de0ec-fa46-4327-bc45-b1beb2bf62eb",
+      "comment": "",
+      "command": "open",
+      "target": "/pje/login.seam?loginComCertificado=false&cid=36306",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a2a2b677-62fb-4c5d-af9f-7bf12eee49ca",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1536x816",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f75b427f-a6e2-4b4e-ace2-9bece4100de2",
+      "comment": "",
+      "command": "selectFrame",
+      "target": "index=0",
+      "targets": [
+        ["index=0"]
+      ],
+      "value": ""
+    }, {
+      "id": "d26ba458-2398-40db-9c9b-7f34215f4a91",
+      "comment": "",
+      "command": "click",
+      "target": "id=kc-pje-office",
+      "targets": [
+        ["id=kc-pje-office", "id"],
+        ["name=login-pje-office", "name"],
+        ["css=#kc-pje-office", "css:finder"],
+        ["xpath=//input[@id='kc-pje-office']", "xpath:attributes"],
+        ["xpath=//form[@id='kc-form-login']/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "89329fcd-3757-4ba3-88d8-f30f3391cb4d",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["e1de1267-7247-4adb-b141-7adbc699f8ea"]
+  }],
+  "urls": ["https://pje.tjdft.jus.br/"],
+  "plugins": []
+}

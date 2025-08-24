@@ -1,0 +1,201 @@
+{
+    "title": "Gravação de 18/08/2024, 23:08:50",
+    "selectorAttribute": "teste.",
+    "steps": [
+        {
+            "type": "setViewport",
+            "width": 683,
+            "height": 911,
+            "deviceScaleFactor": 1,
+            "isMobile": false,
+            "hasTouch": false,
+            "isLandscape": false
+        },
+        {
+            "type": "navigate",
+            "url": "https://pje.tjdft.jus.br/pje/ng2/dev.seam#/painel-usuario-interno",
+            "assertedEvents": [
+                {
+                    "type": "navigation",
+                    "url": "https://pje.tjdft.jus.br/pje/ng2/dev.seam#/painel-usuario-interno",
+                    "title": "· Processo Judicial Eletrônico - 1º Grau"
+                }
+            ]
+        },
+        {
+            "type": "click",
+            "target": "main",
+            "selectors": [
+                [
+                    "li:nth-of-type(2) div > span.tarefa-numero-processo"
+                ],
+                [
+                    "xpath///*[@id=\"processosTarefa\"]/p-datalist/div/div/ul/li[2]/processo-datalist-card/div/div[3]/a/div/span[2]"
+                ],
+                [
+                    "pierce/li:nth-of-type(2) div > span.tarefa-numero-processo"
+                ],
+                [
+                    "text/APOrd 0710807-25.2021.8.07.0004"
+                ]
+            ],
+            "offsetY": 37.578125,
+            "offsetX": 25,
+            "frame": [
+                0
+            ]
+        },
+        {
+            "type": "click",
+            "target": "main",
+            "selectors": [
+                [
+                    "li:nth-of-type(3) div > span.tarefa-numero-processo"
+                ],
+                [
+                    "xpath///*[@id=\"processosTarefa\"]/p-datalist/div/div/ul/li[3]/processo-datalist-card/div/div[3]/a/div/span[2]"
+                ],
+                [
+                    "pierce/li:nth-of-type(3) div > span.tarefa-numero-processo"
+                ],
+                [
+                    "text/IP 0701778-77.2023.8.07.0004"
+                ]
+            ],
+            "offsetY": 15.40625,
+            "offsetX": 38,
+            "frame": [
+                0
+            ]
+        },
+        {
+            "type": "click",
+            "target": "main",
+            "selectors": [
+                [
+                    "li:nth-of-type(4) div > span.tarefa-numero-processo"
+                ],
+                [
+                    "xpath///*[@id=\"processosTarefa\"]/p-datalist/div/div/ul/li[4]/processo-datalist-card/div/div[3]/a/div/span[2]"
+                ],
+                [
+                    "pierce/li:nth-of-type(4) div > span.tarefa-numero-processo"
+                ]
+            ],
+            "offsetY": 27.125,
+            "offsetX": 49,
+            "frame": [
+                0
+            ]
+        },
+        {
+            "type": "click",
+            "target": "main",
+            "selectors": [
+                [
+                    "li:nth-of-type(5) div > span.tarefa-numero-processo"
+                ],
+                [
+                    "xpath///*[@id=\"processosTarefa\"]/p-datalist/div/div/ul/li[5]/processo-datalist-card/div/div[3]/a/div/span[2]"
+                ],
+                [
+                    "pierce/li:nth-of-type(5) div > span.tarefa-numero-processo"
+                ]
+            ],
+            "offsetY": 25.984375,
+            "offsetX": 39,
+            "frame": [
+                0
+            ]
+        },
+        {
+            "type": "click",
+            "target": "main",
+            "selectors": [
+                [
+                    "li:nth-of-type(6) div > span.tarefa-numero-processo"
+                ],
+                [
+                    "xpath///*[@id=\"processosTarefa\"]/p-datalist/div/div/ul/li[6]/processo-datalist-card/div/div[3]/a/div/span[2]"
+                ],
+                [
+                    "pierce/li:nth-of-type(6) div > span.tarefa-numero-processo"
+                ]
+            ],
+            "offsetY": 32.625,
+            "offsetX": 53,
+            "frame": [
+                0
+            ]
+        },
+        {
+            "type": "click",
+            "target": "main",
+            "selectors": [
+                [
+                    "li:nth-of-type(7) div > span.tarefa-numero-processo"
+                ],
+                [
+                    "xpath///*[@id=\"processosTarefa\"]/p-datalist/div/div/ul/li[7]/processo-datalist-card/div/div[3]/a/div/span[2]"
+                ],
+                [
+                    "pierce/li:nth-of-type(7) div > span.tarefa-numero-processo"
+                ],
+                [
+                    "text/AcNãoPerPenal 0704910-16.2021.8.07.0004"
+                ]
+            ],
+            "offsetY": 20.765625,
+            "offsetX": 53,
+            "frame": [
+                0
+            ]
+        },
+        {
+            "type": "click",
+            "target": "main",
+            "selectors": [
+                [
+                    "li:nth-of-type(8) div > span.tarefa-numero-processo"
+                ],
+                [
+                    "xpath///*[@id=\"processosTarefa\"]/p-datalist/div/div/ul/li[8]/processo-datalist-card/div/div[3]/a/div/span[2]"
+                ],
+                [
+                    "pierce/li:nth-of-type(8) div > span.tarefa-numero-processo"
+                ],
+                [
+                    "text/AcNãoPerPenal 0711394-13.2022.8.07.0004"
+                ]
+            ],
+            "offsetY": 14.375,
+            "offsetX": 53,
+            "frame": [
+                0
+            ]
+        },
+        {
+            "type": "click",
+            "target": "main",
+            "selectors": [
+                [
+                    "li:nth-of-type(9) div > span.tarefa-numero-processo"
+                ],
+                [
+                    "xpath///*[@id=\"processosTarefa\"]/p-datalist/div/div/ul/li[9]/processo-datalist-card/div/div[3]/a/div/span[2]"
+                ],
+                [
+                    "pierce/li:nth-of-type(9) div > span.tarefa-numero-processo"
+                ],
+                [
+                    "text/IP 0708240-16.2024.8.07.0004"
+                ]
+            ],
+            "offsetY": 23.015625,
+            "offsetX": 51,
+            "frame": [
+                0
+            ]
+        }
+    ]
+}

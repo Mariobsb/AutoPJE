@@ -1,0 +1,459 @@
+2025-08-22 03:34:42.835 [INFO] === Início do login_once ===
+2025-08-22 03:34:42.836 [INFO] User Data Dir: C:\Users\mario\AppData\Local\Google\Chrome\User Data | Profile: Default
+2025-08-22 03:34:42.836 [INFO] Feche TODAS as janelas do Chrome desse perfil para evitar conflito.
+2025-08-22 03:34:42.837 [INFO] Abrindo Chrome com perfil real, extensões e sem flags problemáticas...
+2025-08-22 03:34:42.837 [DEBUG] Using proactor: IocpProactor
+2025-08-22 03:35:31.493 [ERROR] Exceção não tratada durante a execução.
+2025-08-22 03:35:31.493 [ERROR] BrowserType.launch_persistent_context: Target page, context or browser has been closed
+Browser logs:
+
+<launching> C:\Program Files\Google\Chrome\Application\chrome.exe --disable-field-trial-config --disable-background-networking --disable-background-timer-throttling --disable-backgrounding-occluded-windows --disable-back-forward-cache --disable-breakpad --disable-client-side-phishing-detection --disable-component-extensions-with-background-pages --disable-component-update --no-default-browser-check --disable-default-apps --disable-dev-shm-usage --disable-features=AcceptCHFrame,AutoExpandDetailsElement,AvoidUnnecessaryBeforeUnloadCheckSync,CertificateTransparencyComponentUpdater,DestroyProfileOnBrowserClose,DialMediaRouteProvider,ExtensionManifestV2Disabled,GlobalMediaControls,HttpsUpgrades,ImprovedCookieControls,LazyFrameLoading,LensOverlay,MediaRouter,PaintHolding,ThirdPartyStoragePartitioning,Translate --allow-pre-commit-input --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --force-color-profile=srgb --metrics-recording-only --no-first-run --password-store=basic --use-mock-keychain --no-service-autorun --export-tagged-pdf --disable-search-engine-choice-screen --unsafely-disable-devtools-self-xss-warnings --edge-skip-compat-layer-relaunch --start-maximized --profile-directory=Default --no-first-run --no-default-browser-check --user-data-dir=C:\Users\mario\AppData\Local\Google\Chrome\User Data --remote-debugging-pipe about:blank
+<launched> pid=21392
+[pid=21392][err] 
+[pid=21392][err] DevTools remote debugging requires a non-default data directory. Specify this using --user-data-dir.
+[pid=21392][err] [21392:31440:0822/033446.712:ERROR:components\device_event_log\device_event_log_impl.cc:198] [03:34:46.713] USB: usb_service_win.cc:105 SetupDiGetDeviceProperty({{A45C254E-DF1C-4EFD-8020-67D146A850E0}, 6}) failed: Elemento não encontrado. (0x490)
+[pid=21392][err] WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+[pid=21392][err] I0000 00:00:1755844486.790686   25632 voice_transcription.cc:58] Registering VoiceTranscriptionCapability
+[pid=21392][err] Created TensorFlow Lite XNNPACK delegate for CPU.
+[pid=21392][err] [21392:17420:0822/033447.195:ERROR:google_apis\gcm\engine\registration_request.cc:291] Registration response error message: DEPRECATED_ENDPOINT
+[pid=21392][err] [21392:17420:0822/033515.221:ERROR:google_apis\gcm\engine\registration_request.cc:291] Registration response error message: DEPRECATED_ENDPOINT
+Call log:
+  - <launching> C:\Program Files\Google\Chrome\Application\chrome.exe --disable-field-trial-config --disable-background-networking --disable-background-timer-throttling --disable-backgrounding-occluded-windows --disable-back-forward-cache --disable-breakpad --disable-client-side-phishing-detection --disable-component-extensions-with-background-pages --disable-component-update --no-default-browser-check --disable-default-apps --disable-dev-shm-usage --disable-features=AcceptCHFrame,AutoExpandDetailsElement,AvoidUnnecessaryBeforeUnloadCheckSync,CertificateTransparencyComponentUpdater,DestroyProfileOnBrowserClose,DialMediaRouteProvider,ExtensionManifestV2Disabled,GlobalMediaControls,HttpsUpgrades,ImprovedCookieControls,LazyFrameLoading,LensOverlay,MediaRouter,PaintHolding,ThirdPartyStoragePartitioning,Translate --allow-pre-commit-input --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --force-color-profile=srgb --metrics-recording-only --no-first-run --password-store=basic --use-mock-keychain --no-service-autorun --export-tagged-pdf --disable-search-engine-choice-screen --unsafely-disable-devtools-self-xss-warnings --edge-skip-compat-layer-relaunch --start-maximized --profile-directory=Default --no-first-run --no-default-browser-check --user-data-dir=C:\Users\mario\AppData\Local\Google\Chrome\User Data --remote-debugging-pipe about:blank
+  - <launched> pid=21392
+  - [pid=21392][err]
+  - [pid=21392][err] DevTools remote debugging requires a non-default data directory. Specify this using --user-data-dir.
+  - [pid=21392][err] [21392:31440:0822/033446.712:ERROR:components\device_event_log\device_event_log_impl.cc:198] [03:34:46.713] USB: usb_service_win.cc:105 SetupDiGetDeviceProperty({{A45C254E-DF1C-4EFD-8020-67D146A850E0}, 6}) failed: Elemento não encontrado. (0x490)
+  - [pid=21392][err] WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+  - [pid=21392][err] I0000 00:00:1755844486.790686   25632 voice_transcription.cc:58] Registering VoiceTranscriptionCapability
+  - [pid=21392][err] Created TensorFlow Lite XNNPACK delegate for CPU.
+  - [pid=21392][err] [21392:17420:0822/033447.195:ERROR:google_apis\gcm\engine\registration_request.cc:291] Registration response error message: DEPRECATED_ENDPOINT
+  - [pid=21392][err] [21392:17420:0822/033515.221:ERROR:google_apis\gcm\engine\registration_request.cc:291] Registration response error message: DEPRECATED_ENDPOINT
+
+2025-08-22 03:35:31.506 [ERROR] Traceback (most recent call last):
+  File "d:\AUTOMAÇÃO PJE\login_once.py", line 169, in main
+    context = p.chromium.launch_persistent_context(channel="chrome", **launch_kwargs)
+  File "C:\Users\mario\AppData\Local\Programs\Python\Python313\Lib\site-packages\playwright\sync_api\_generated.py", line 14785, in launch_persistent_context
+    self._sync(
+    ~~~~~~~~~~^
+        self._impl_obj.launch_persistent_context(
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<51 lines>...
+        )
+        ^
+    )
+    ^
+  File "C:\Users\mario\AppData\Local\Programs\Python\Python313\Lib\site-packages\playwright\_impl\_sync_base.py", line 115, in _sync
+    return task.result()
+           ~~~~~~~~~~~^^
+  File "C:\Users\mario\AppData\Local\Programs\Python\Python313\Lib\site-packages\playwright\_impl\_browser_type.py", line 166, in launch_persistent_context
+    result = await self._channel.send_return_as_dict(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        "launchPersistentContext", TimeoutSettings.launch_timeout, params
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\mario\AppData\Local\Programs\Python\Python313\Lib\site-packages\playwright\_impl\_connection.py", line 83, in send_return_as_dict
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "C:\Users\mario\AppData\Local\Programs\Python\Python313\Lib\site-packages\playwright\_impl\_connection.py", line 558, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+playwright._impl._errors.TargetClosedError: BrowserType.launch_persistent_context: Target page, context or browser has been closed
+Browser logs:
+
+<launching> C:\Program Files\Google\Chrome\Application\chrome.exe --disable-field-trial-config --disable-background-networking --disable-background-timer-throttling --disable-backgrounding-occluded-windows --disable-back-forward-cache --disable-breakpad --disable-client-side-phishing-detection --disable-component-extensions-with-background-pages --disable-component-update --no-default-browser-check --disable-default-apps --disable-dev-shm-usage --disable-features=AcceptCHFrame,AutoExpandDetailsElement,AvoidUnnecessaryBeforeUnloadCheckSync,CertificateTransparencyComponentUpdater,DestroyProfileOnBrowserClose,DialMediaRouteProvider,ExtensionManifestV2Disabled,GlobalMediaControls,HttpsUpgrades,ImprovedCookieControls,LazyFrameLoading,LensOverlay,MediaRouter,PaintHolding,ThirdPartyStoragePartitioning,Translate --allow-pre-commit-input --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --force-color-profile=srgb --metrics-recording-only --no-first-run --password-store=basic --use-mock-keychain --no-service-autorun --export-tagged-pdf --disable-search-engine-choice-screen --unsafely-disable-devtools-self-xss-warnings --edge-skip-compat-layer-relaunch --start-maximized --profile-directory=Default --no-first-run --no-default-browser-check --user-data-dir=C:\Users\mario\AppData\Local\Google\Chrome\User Data --remote-debugging-pipe about:blank
+<launched> pid=21392
+[pid=21392][err] 
+[pid=21392][err] DevTools remote debugging requires a non-default data directory. Specify this using --user-data-dir.
+[pid=21392][err] [21392:31440:0822/033446.712:ERROR:components\device_event_log\device_event_log_impl.cc:198] [03:34:46.713] USB: usb_service_win.cc:105 SetupDiGetDeviceProperty({{A45C254E-DF1C-4EFD-8020-67D146A850E0}, 6}) failed: Elemento não encontrado. (0x490)
+[pid=21392][err] WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+[pid=21392][err] I0000 00:00:1755844486.790686   25632 voice_transcription.cc:58] Registering VoiceTranscriptionCapability
+[pid=21392][err] Created TensorFlow Lite XNNPACK delegate for CPU.
+[pid=21392][err] [21392:17420:0822/033447.195:ERROR:google_apis\gcm\engine\registration_request.cc:291] Registration response error message: DEPRECATED_ENDPOINT
+[pid=21392][err] [21392:17420:0822/033515.221:ERROR:google_apis\gcm\engine\registration_request.cc:291] Registration response error message: DEPRECATED_ENDPOINT
+Call log:
+  - <launching> C:\Program Files\Google\Chrome\Application\chrome.exe --disable-field-trial-config --disable-background-networking --disable-background-timer-throttling --disable-backgrounding-occluded-windows --disable-back-forward-cache --disable-breakpad --disable-client-side-phishing-detection --disable-component-extensions-with-background-pages --disable-component-update --no-default-browser-check --disable-default-apps --disable-dev-shm-usage --disable-features=AcceptCHFrame,AutoExpandDetailsElement,AvoidUnnecessaryBeforeUnloadCheckSync,CertificateTransparencyComponentUpdater,DestroyProfileOnBrowserClose,DialMediaRouteProvider,ExtensionManifestV2Disabled,GlobalMediaControls,HttpsUpgrades,ImprovedCookieControls,LazyFrameLoading,LensOverlay,MediaRouter,PaintHolding,ThirdPartyStoragePartitioning,Translate --allow-pre-commit-input --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --force-color-profile=srgb --metrics-recording-only --no-first-run --password-store=basic --use-mock-keychain --no-service-autorun --export-tagged-pdf --disable-search-engine-choice-screen --unsafely-disable-devtools-self-xss-warnings --edge-skip-compat-layer-relaunch --start-maximized --profile-directory=Default --no-first-run --no-default-browser-check --user-data-dir=C:\Users\mario\AppData\Local\Google\Chrome\User Data --remote-debugging-pipe about:blank
+  - <launched> pid=21392
+  - [pid=21392][err]
+  - [pid=21392][err] DevTools remote debugging requires a non-default data directory. Specify this using --user-data-dir.
+  - [pid=21392][err] [21392:31440:0822/033446.712:ERROR:components\device_event_log\device_event_log_impl.cc:198] [03:34:46.713] USB: usb_service_win.cc:105 SetupDiGetDeviceProperty({{A45C254E-DF1C-4EFD-8020-67D146A850E0}, 6}) failed: Elemento não encontrado. (0x490)
+  - [pid=21392][err] WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+  - [pid=21392][err] I0000 00:00:1755844486.790686   25632 voice_transcription.cc:58] Registering VoiceTranscriptionCapability
+  - [pid=21392][err] Created TensorFlow Lite XNNPACK delegate for CPU.
+  - [pid=21392][err] [21392:17420:0822/033447.195:ERROR:google_apis\gcm\engine\registration_request.cc:291] Registration response error message: DEPRECATED_ENDPOINT
+  - [pid=21392][err] [21392:17420:0822/033515.221:ERROR:google_apis\gcm\engine\registration_request.cc:291] Registration response error message: DEPRECATED_ENDPOINT
+
+
+2025-08-22 03:35:31.530 [INFO] === Fim do login_once ===
+2025-08-22 03:39:37.085 [INFO] === Início do login_once ===
+2025-08-22 03:39:37.086 [INFO] Perfil origem: C:\Users\mario\AppData\Local\Google\Chrome\User Data -> Default
+2025-08-22 03:39:37.086 [INFO] Perfil automação (destino): C:\ChromeAutomation\User Data -> Default
+2025-08-22 03:39:37.086 [INFO] Criando perfil de automação (clone do perfil original)...
+2025-08-22 03:39:37.087 [INFO] Executando: robocopy "C:\Users\mario\AppData\Local\Google\Chrome\User Data" "C:\ChromeAutomation\User Data" /MIR /Z /COPYALL /R:1 /W:1 /NFL /NDL /NP /NJH /NJS
+2025-08-22 03:39:37.173 [DEBUG] ROBOCOPY STDOUT:
+
+ERRO: vocˆ nÆo tem o direito de usu rio Gerenciar Auditoria.
+*****  Vocˆ precisa disso para copiar as informa‡äes de auditoria (/COPY:U ou /COPYALL).
+
+              Uso Simples :: ROBOCOPY origem destino /MIR
+
+                   origem :: Diret¢rio de Origem (unidade:\caminho ou
+                             \\servidor\compartilhamento\caminho).
+                  destino :: Diret¢rio de Destino  (unidade:\caminho ou
+                             \\servidor\compartilhamento\caminho).
+                     /MIR :: espelhar uma  rvore de diret¢rio completa.
+
+    Para obter mais informa‡äes sobre uso, execute ROBOCOPY /?
+
+                                                          
+****  /MIR pode EXCLUIR arquivos e tamb‚m copi -los!
+
+2025-08-22 03:39:37.174 [DEBUG] ROBOCOPY STDERR:
+
+2025-08-22 03:39:37.174 [ERROR] Robocopy retornou código 16. Verifique permissões/arquivos bloqueados.
+2025-08-22 03:39:46.213 [INFO] === Início do login_once ===
+2025-08-22 03:39:46.213 [INFO] Perfil origem: C:\Users\mario\AppData\Local\Google\Chrome\User Data -> Default
+2025-08-22 03:39:46.213 [INFO] Perfil automação (destino): C:\ChromeAutomation\User Data -> Default
+2025-08-22 03:39:46.214 [INFO] Criando perfil de automação (clone do perfil original)...
+2025-08-22 03:39:46.214 [INFO] Executando: robocopy "C:\Users\mario\AppData\Local\Google\Chrome\User Data" "C:\ChromeAutomation\User Data" /MIR /Z /COPYALL /R:1 /W:1 /NFL /NDL /NP /NJH /NJS
+2025-08-22 03:39:46.281 [DEBUG] ROBOCOPY STDOUT:
+
+ERRO: vocˆ nÆo tem o direito de usu rio Gerenciar Auditoria.
+*****  Vocˆ precisa disso para copiar as informa‡äes de auditoria (/COPY:U ou /COPYALL).
+
+              Uso Simples :: ROBOCOPY origem destino /MIR
+
+                   origem :: Diret¢rio de Origem (unidade:\caminho ou
+                             \\servidor\compartilhamento\caminho).
+                  destino :: Diret¢rio de Destino  (unidade:\caminho ou
+                             \\servidor\compartilhamento\caminho).
+                     /MIR :: espelhar uma  rvore de diret¢rio completa.
+
+    Para obter mais informa‡äes sobre uso, execute ROBOCOPY /?
+
+                                                          
+****  /MIR pode EXCLUIR arquivos e tamb‚m copi -los!
+
+2025-08-22 03:39:46.282 [DEBUG] ROBOCOPY STDERR:
+
+2025-08-22 03:39:46.282 [ERROR] Robocopy retornou código 16. Verifique permissões/arquivos bloqueados.
+2025-08-22 03:39:50.904 [INFO] === Início do login_once ===
+2025-08-22 03:39:50.905 [INFO] Perfil origem: C:\Users\mario\AppData\Local\Google\Chrome\User Data -> Default
+2025-08-22 03:39:50.905 [INFO] Perfil automação (destino): C:\ChromeAutomation\User Data -> Default
+2025-08-22 03:39:50.905 [INFO] Criando perfil de automação (clone do perfil original)...
+2025-08-22 03:39:50.906 [INFO] Executando: robocopy "C:\Users\mario\AppData\Local\Google\Chrome\User Data" "C:\ChromeAutomation\User Data" /MIR /Z /COPYALL /R:1 /W:1 /NFL /NDL /NP /NJH /NJS
+2025-08-22 03:39:50.962 [DEBUG] ROBOCOPY STDOUT:
+
+ERRO: vocˆ nÆo tem o direito de usu rio Gerenciar Auditoria.
+*****  Vocˆ precisa disso para copiar as informa‡äes de auditoria (/COPY:U ou /COPYALL).
+
+              Uso Simples :: ROBOCOPY origem destino /MIR
+
+                   origem :: Diret¢rio de Origem (unidade:\caminho ou
+                             \\servidor\compartilhamento\caminho).
+                  destino :: Diret¢rio de Destino  (unidade:\caminho ou
+                             \\servidor\compartilhamento\caminho).
+                     /MIR :: espelhar uma  rvore de diret¢rio completa.
+
+    Para obter mais informa‡äes sobre uso, execute ROBOCOPY /?
+
+                                                          
+****  /MIR pode EXCLUIR arquivos e tamb‚m copi -los!
+
+2025-08-22 03:39:50.962 [DEBUG] ROBOCOPY STDERR:
+
+2025-08-22 03:39:50.962 [ERROR] Robocopy retornou código 16. Verifique permissões/arquivos bloqueados.
+2025-08-22 03:46:13.618 [INFO] === Início do login_once ===
+2025-08-22 03:46:13.619 [INFO] Perfil origem: C:\Users\mario\AppData\Local\Google\Chrome\User Data -> Default
+2025-08-22 03:46:13.619 [INFO] Perfil automação (destino): C:\Users\mario\AppData\Local\ChromeAutomation\User Data -> Default
+2025-08-22 03:46:13.621 [INFO] Fechando processos do Chrome para liberar arquivos...
+2025-08-22 03:46:15.440 [INFO] Clonando perfil (robocopy)...
+2025-08-22 03:46:15.440 [INFO] Executando: robocopy "C:\Users\mario\AppData\Local\Google\Chrome\User Data\Default" "C:\Users\mario\AppData\Local\ChromeAutomation\User Data\Default" /E /COPY:DAT /R:1 /W:1 /NFL /NDL /NP /NJH /NJS /XD "C:/Users/mario/AppData/Local/Google/Chrome/User Data/Default/Crashpad" /XD "C:/Users/mario/AppData/Local/Google/Chrome/User Data/Default/GPUCache" /XD "C:/Users/mario/AppData/Local/Google/Chrome/User Data/Default/Code Cache" /XD "C:/Users/mario/AppData/Local/Google/Chrome/User Data/Default/Safe Browsing" /XD "C:/Users/mario/AppData/Local/Google/Chrome/User Data/Default/GrShaderCache" /XD "C:/Users/mario/AppData/Local/Google/Chrome/User Data/Default/WebStorage" /XD "C:/Users/mario/AppData/Local/Google/Chrome/User Data/Default/BrowserMetrics" /XD "C:/Users/mario/AppData/Local/Google/Chrome/User Data/Default/Service Worker/CacheStorage"
+2025-08-22 03:48:56.392 [DEBUG] ROBOCOPY STDOUT:
+
+2025/08/22 03:48:18 ERRO 32 (0x00000020) Copiando Arquivo C:\Users\mario\AppData\Local\Google\Chrome\User Data\Default\Sessions\Session_13400318864693556
+O arquivo j  est  sendo usado por outro processo.
+
+Aguardando 1 segundos... Repetindo...
+2025/08/22 03:48:19 ERRO 32 (0x00000020) Copiando Arquivo C:\Users\mario\AppData\Local\Google\Chrome\User Data\Default\Sessions\Session_13400318864693556
+O arquivo j  est  sendo usado por outro processo.
+
+
+ERRO: LIMITE DE REPETI€ÇO EXCEDIDO.
+
+2025/08/22 03:48:19 ERRO 32 (0x00000020) Copiando Arquivo C:\Users\mario\AppData\Local\Google\Chrome\User Data\Default\Sessions\Tabs_13400318865124136
+O arquivo j  est  sendo usado por outro processo.
+
+Aguardando 1 segundos... Repetindo...
+2025/08/22 03:48:20 ERRO 32 (0x00000020) Copiando Arquivo C:\Users\mario\AppData\Local\Google\Chrome\User Data\Default\Sessions\Tabs_13400318865124136
+O arquivo j  est  sendo usado por outro processo.
+
+
+ERRO: LIMITE DE REPETI€ÇO EXCEDIDO.
+
+
+2025-08-22 03:48:56.392 [DEBUG] ROBOCOPY STDERR:
+
+2025-08-22 03:48:56.393 [ERROR] Robocopy retornou código 9. Seguirei com perfil vazio.
+2025-08-22 03:48:56.396 [INFO] Arquivo 'Local State' copiado.
+2025-08-22 03:48:56.396 [INFO] Feche TODAS as janelas do Chrome (origem e automação) para evitar conflito.
+2025-08-22 03:48:56.396 [INFO] Abrindo Chrome com perfil de automação (não-padrão), extensões (se clonadas) e sem flags problemáticas...
+2025-08-22 03:48:56.397 [DEBUG] Using proactor: IocpProactor
+2025-08-22 03:48:58.742 [ERROR] Exceção não tratada durante a execução.
+2025-08-22 03:48:58.761 [ERROR] BrowserContext.new_page: Protocol error (Target.createTarget): Failed to open a new tab
+2025-08-22 03:48:58.766 [ERROR] Traceback (most recent call last):
+  File "d:\AUTOMAÇÃO PJE\login_once.py", line 305, in main
+    page = context.new_page()
+  File "C:\Users\mario\AppData\Local\Programs\Python\Python313\Lib\site-packages\playwright\sync_api\_generated.py", line 12815, in new_page
+    return mapping.from_impl(self._sync(self._impl_obj.new_page()))
+                             ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mario\AppData\Local\Programs\Python\Python313\Lib\site-packages\playwright\_impl\_sync_base.py", line 115, in _sync
+    return task.result()
+           ~~~~~~~~~~~^^
+  File "C:\Users\mario\AppData\Local\Programs\Python\Python313\Lib\site-packages\playwright\_impl\_browser_context.py", line 335, in new_page
+    return from_channel(await self._channel.send("newPage", None))
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mario\AppData\Local\Programs\Python\Python313\Lib\site-packages\playwright\_impl\_connection.py", line 69, in send
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "C:\Users\mario\AppData\Local\Programs\Python\Python313\Lib\site-packages\playwright\_impl\_connection.py", line 558, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+playwright._impl._errors.Error: BrowserContext.new_page: Protocol error (Target.createTarget): Failed to open a new tab
+
+2025-08-22 03:48:58.782 [WARNING] Falha ao salvar trace: Tracing.stop: Target page, context or browser has been closed
+2025-08-22 03:49:01.411 [INFO] === Fim do login_once ===
+2025-08-22 03:52:01.605 [INFO] === Início do login_once ===
+2025-08-22 03:52:01.605 [INFO] Perfil origem: C:\Users\mario\AppData\Local\Google\Chrome\User Data -> Default
+2025-08-22 03:52:01.606 [INFO] Perfil automação (destino): C:\Users\mario\AppData\Local\ChromeAutomation\User Data -> Default
+2025-08-22 03:52:01.606 [INFO] Fechando processos do Chrome para liberar arquivos...
+2025-08-22 03:52:02.390 [INFO] [COPY] Local State -> OK
+2025-08-22 03:52:02.392 [INFO] [COPY] Preferences -> OK
+2025-08-22 03:52:02.393 [INFO] [COPY] Secure Preferences -> OK
+2025-08-22 03:52:02.402 [INFO] [COPY] Login Data -> OK
+2025-08-22 03:52:02.404 [INFO] [COPY] Login Data For Account -> OK
+2025-08-22 03:52:02.413 [INFO] [COPY] Web Data -> OK
+2025-08-22 03:52:02.499 [INFO] [COPY] History -> OK
+2025-08-22 03:52:06.660 [INFO] [COPY] Extensions/ -> OK
+2025-08-22 03:52:06.660 [INFO] Cópia essencial concluída.
+2025-08-22 03:52:06.660 [INFO] Abrindo Chrome com perfil de automação (não-padrão), extensões (se copiadas) e sem flags problemáticas...
+2025-08-22 03:52:06.660 [DEBUG] Using proactor: IocpProactor
+2025-08-22 03:52:08.710 [ERROR] Exceção não tratada durante a execução.
+2025-08-22 03:52:08.728 [ERROR] BrowserContext.new_page: Protocol error (Target.createTarget): Failed to open a new tab
+2025-08-22 03:52:08.734 [ERROR] Traceback (most recent call last):
+  File "d:\AUTOMAÇÃO PJE\login_once.py", line 296, in main
+    page = context.new_page()
+  File "C:\Users\mario\AppData\Local\Programs\Python\Python313\Lib\site-packages\playwright\sync_api\_generated.py", line 12815, in new_page
+    return mapping.from_impl(self._sync(self._impl_obj.new_page()))
+                             ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mario\AppData\Local\Programs\Python\Python313\Lib\site-packages\playwright\_impl\_sync_base.py", line 115, in _sync
+    return task.result()
+           ~~~~~~~~~~~^^
+  File "C:\Users\mario\AppData\Local\Programs\Python\Python313\Lib\site-packages\playwright\_impl\_browser_context.py", line 335, in new_page
+    return from_channel(await self._channel.send("newPage", None))
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mario\AppData\Local\Programs\Python\Python313\Lib\site-packages\playwright\_impl\_connection.py", line 69, in send
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "C:\Users\mario\AppData\Local\Programs\Python\Python313\Lib\site-packages\playwright\_impl\_connection.py", line 558, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+playwright._impl._errors.Error: BrowserContext.new_page: Protocol error (Target.createTarget): Failed to open a new tab
+
+2025-08-22 03:52:08.763 [WARNING] Falha ao salvar trace: Tracing.stop: Target page, context or browser has been closed
+2025-08-22 03:52:10.411 [INFO] === Fim do login_once ===
+2025-08-22 03:56:41.023 [INFO] === Início do login_once ===
+2025-08-22 03:56:41.024 [INFO] Perfil origem: C:\Users\mario\AppData\Local\Google\Chrome\User Data -> Default
+2025-08-22 03:56:41.024 [INFO] Perfil automação (destino): C:\Users\mario\AppData\Local\ChromeAutomation\User Data -> Default
+2025-08-22 03:56:41.024 [INFO] Fechando processos do Chrome para liberar arquivos...
+2025-08-22 03:56:41.967 [INFO] [COPY] Local State -> OK
+2025-08-22 03:56:41.969 [INFO] [COPY] Preferences -> OK
+2025-08-22 03:56:41.971 [INFO] [COPY] Secure Preferences -> OK
+2025-08-22 03:56:41.979 [INFO] [COPY] Login Data -> OK
+2025-08-22 03:56:41.981 [INFO] [COPY] Login Data For Account -> OK
+2025-08-22 03:56:41.991 [INFO] [COPY] Web Data -> OK
+2025-08-22 03:56:42.054 [INFO] [COPY] History -> OK
+2025-08-22 03:56:45.732 [INFO] [COPY] Extensions/ -> OK
+2025-08-22 03:56:45.733 [INFO] Cópia essencial concluída.
+2025-08-22 03:56:45.733 [INFO] Abrindo Chrome com perfil de automação (não-padrão), extensões (se copiadas) e sem flags problemáticas...
+2025-08-22 03:56:45.733 [DEBUG] Using proactor: IocpProactor
+2025-08-22 03:56:47.732 [INFO] [PAGE] Reutilizando aba existente: about:blank
+2025-08-22 03:56:47.758 [INFO] [NAV 1/3] Abrindo página inicial do PJe: https://pje.tjdft.jus.br/pje/
+2025-08-22 03:56:50.557 [INFO] [HTTP 200] https://pje.tjdft.jus.br/pje/
+2025-08-22 03:56:50.635 [INFO] [NAV] OK
+2025-08-22 03:56:50.636 [INFO] [NAV 1/3] Tentando acessar painel (o PJe redireciona para login se necessário): https://pje.tjdft.jus.br/pje/ng2/dev.seam#/painel-usuario-interno
+2025-08-22 03:56:50.718 [INFO] [HTTP 302] https://pje.tjdft.jus.br/pje/ng2/dev.seam
+2025-08-22 03:56:50.784 [INFO] [HTTP 302] https://pje.tjdft.jus.br/pje/login.seam?cid=7233
+2025-08-22 03:56:50.965 [INFO] [HTTP 200] https://sso.cloud.pje.jus.br/auth/realms/pje/protocol/openid-connect/auth?response_type=code&client_id=pje-tjdft-1g&redirect_uri=https%3A%2F%2Fpje.tjdft.jus.br%2Fpje%2Flogin.seam?cid%3D7233&state=33e03c20-43f9-4b43-afb9-3f85e784a27b&login=true&scope=openid
+2025-08-22 03:56:51.047 [INFO] [HTTP 200] https://pje.tjdft.jus.br/pje/img/brasaoRep.png
+2025-08-22 03:56:51.179 [INFO] [NAV] OK
+2025-08-22 03:56:51.179 [INFO] Aguardando conclusão do login no PJe...
+2025-08-22 03:56:51.180 [INFO] URL atual: https://sso.cloud.pje.jus.br/auth/realms/pje/protocol/openid-connect/auth?response_type=code&client_id=pje-tjdft-1g&redirect_uri=https%3A%2F%2Fpje.tjdft.jus.br%2Fpje%2Flogin.seam?cid%3D7233&state=33e03c20-43f9-4b43-afb9-3f85e784a27b&login=true&scope=openid#/painel-usuario-interno
+2025-08-22 04:04:18.551 [INFO] === Início do login_once ===
+2025-08-22 04:04:18.552 [INFO] Perfil origem: C:\Users\mario\AppData\Local\Google\Chrome\User Data -> Default
+2025-08-22 04:04:18.552 [INFO] Perfil automação (destino): C:\Users\mario\AppData\Local\ChromeAutomation\User Data -> Default
+2025-08-22 04:04:18.552 [INFO] Fechando processos do Chrome para liberar arquivos...
+2025-08-22 04:04:19.363 [INFO] [COPY] Local State -> OK
+2025-08-22 04:04:19.365 [INFO] [COPY] Preferences -> OK
+2025-08-22 04:04:19.366 [INFO] [COPY] Secure Preferences -> OK
+2025-08-22 04:04:19.373 [INFO] [COPY] Login Data -> OK
+2025-08-22 04:04:19.375 [INFO] [COPY] Login Data For Account -> OK
+2025-08-22 04:04:19.380 [INFO] [COPY] Web Data -> OK
+2025-08-22 04:04:19.432 [INFO] [COPY] History -> OK
+2025-08-22 04:04:22.392 [INFO] [COPY] Extensions/ -> OK
+2025-08-22 04:04:22.392 [INFO] Cópia essencial concluída.
+2025-08-22 04:04:22.392 [INFO] Abrindo Chrome com perfil de automação (não-padrão), extensões (se copiadas) e sem flags problemáticas...
+2025-08-22 04:04:22.393 [DEBUG] Using proactor: IocpProactor
+2025-08-22 04:04:24.358 [INFO] [PAGE] Reutilizando aba existente: about:blank
+2025-08-22 04:04:24.385 [INFO] [NAV 1/3] Abrindo página inicial do PJe: https://pje.tjdft.jus.br/pje/
+2025-08-22 04:04:24.432 [INFO] [HTTP 200] https://pje.tjdft.jus.br/pje/
+2025-08-22 04:04:24.534 [INFO] [NAV] OK
+2025-08-22 04:04:24.568 [INFO] [NAV 1/3] Tentando acessar painel (o PJe redireciona para login se necessário): https://pje.tjdft.jus.br/pje/ng2/dev.seam#/painel-usuario-interno
+2025-08-22 04:04:24.819 [INFO] [HTTP 302] https://pje.tjdft.jus.br/pje/ng2/dev.seam
+2025-08-22 04:04:24.867 [INFO] [HTTP 302] https://pje.tjdft.jus.br/pje/login.seam;jsessionid=a2nyikYgb1rPPk3-QWUPIclQ6ENnwdcwK_eX7Swy.hc-zdu131:pje-internet-zdu131?cid=7542
+2025-08-22 04:04:25.110 [INFO] [HTTP 200] https://sso.cloud.pje.jus.br/auth/realms/pje/protocol/openid-connect/auth?response_type=code&client_id=pje-tjdft-1g&redirect_uri=https%3A%2F%2Fpje.tjdft.jus.br%2Fpje%2Flogin.seam%3Bjsessionid%3Da2nyikYgb1rPPk3-QWUPIclQ6ENnwdcwK_eX7Swy.hc-zdu131%3Apje-internet-zdu131?cid%3D7542&state=fd62872e-2039-47fd-8835-27ca3dd81864&login=true&scope=openid
+2025-08-22 04:04:25.196 [INFO] [HTTP 200] https://pje.tjdft.jus.br/pje/img/brasaoRep.png
+2025-08-22 04:04:25.338 [INFO] [NAV] OK
+2025-08-22 04:04:25.339 [INFO] Aguardando conclusão do login no PJe...
+2025-08-22 04:04:25.340 [INFO] URL atual: https://sso.cloud.pje.jus.br/auth/realms/pje/protocol/openid-connect/auth?response_type=code&client_id=pje-tjdft-1g&redirect_uri=https%3A%2F%2Fpje.tjdft.jus.br%2Fpje%2Flogin.seam%3Bjsessionid%3Da2nyikYgb1rPPk3-QWUPIclQ6ENnwdcwK_eX7Swy.hc-zdu131%3Apje-internet-zdu131?cid%3D7542&state=fd62872e-2039-47fd-8835-27ca3dd81864&login=true&scope=openid#/painel-usuario-interno
+2025-08-22 04:05:30.943 [WARNING] Falha ao salvar trace: Tracing.stop: 'str' object has no attribute 'error_text'
+2025-08-22 04:05:30.947 [INFO] [HTTP 200] https://pje.tjdft.jus.br/pje/seam/resource/rest/pje-legacy/parametros/custom-login-info
+2025-08-22 04:05:30.948 [INFO] [HTTP 200] https://pje.tjdft.jus.br/pje/seam/resource/rest/pje-legacy/parametros/fale-conosco-info
+2025-08-22 04:05:30.949 [INFO] [HTTP 200] https://pje.tjdft.jus.br/pje/seam/resource/rest/pje-legacy/status/versao
+2025-08-22 04:05:30.981 [INFO] [HTTP 302] https://pje.tjdft.jus.br/pje/login.seam;jsessionid=a2nyikYgb1rPPk3-QWUPIclQ6ENnwdcwK_eX7Swy.hc-zdu131:pje-internet-zdu131?cid=7542&state=fd62872e-2039-47fd-8835-27ca3dd81864&session_state=c71b36a2-876b-48a7-9303-0cbfbb8bf724&code=fbf315ae-f23c-4c73-9735-9a19fc7bb7ce.c71b36a2-876b-48a7-9303-0cbfbb8bf724.883559c5-896a-45c9-9fca-4a86ff362dd9
+2025-08-22 04:05:30.982 [INFO] [HTTP 302] https://pje.tjdft.jus.br/pje/login.seam;jsessionid=a2nyikYgb1rPPk3-QWUPIclQ6ENnwdcwK_eX7Swy.hc-zdu131:pje-internet-zdu131?cid=7542
+2025-08-22 04:05:30.984 [INFO] [HTTP 200] https://pje.tjdft.jus.br/pje/ng2/dev.seam
+2025-08-22 04:05:30.993 [INFO] [HTTP 200] https://pje.tjdft.jus.br/pje/a4j/s/3_3_3.Finalorg/richfaces/renderkit/html/css/basic_classes.xcss/DATB/eAELXT5DOhSIAQ!sA18_
+2025-08-22 04:05:30.995 [INFO] [HTTP 200] https://pje.tjdft.jus.br/pje/a4j/s/3_3_3.Final/org/richfaces/skin.xcss/DATB/eAELXT5DOhSIAQ!sA18_
+2025-08-22 04:05:30.998 [INFO] [HTTP 200] https://pje.tjdft.jus.br/pje/stylesheet/estilos/bootstrap/bootstrap.min.css
+2025-08-22 04:05:30.999 [INFO] [HTTP 200] https://pje.tjdft.jus.br/pje/stylesheet/dropzone/dropzone.css
+2025-08-22 04:05:31.004 [INFO] [HTTP 200] https://pje.tjdft.jus.br/pje/stylesheet/estilos/richfaces/tema.css
+2025-08-22 04:05:31.009 [INFO] [HTTP 200] https://pje.tjdft.jus.br/pje/stylesheet/padrao.css
+2025-08-22 04:05:31.014 [INFO] [HTTP 200] https://pje.tjdft.jus.br/pje/stylesheet/autos-digitais.css
+2025-08-22 04:05:31.017 [INFO] [HTTP 200] https://pje.tjdft.jus.br/pje/stylesheet/estilos/select2/select2.min.css
+2025-08-22 04:05:31.021 [INFO] [HTTP 200] https://pje.tjdft.jus.br/pje/js/modernizr.custom.js
+2025-08-22 04:05:31.025 [INFO] [HTTP 200] https://pje.tjdft.jus.br/pje/a4j/g/3_3_3.Final/org/ajax4jsf/framework.pack.js
+2025-08-22 04:05:31.028 [INFO] [HTTP 200] https://pje.tjdft.jus.br/pje/js/jquery.maskedinput.min.js
+2025-08-22 04:05:31.031 [INFO] [HTTP 200] https://pje.tjdft.jus.br/pje/js/jquery-ui-1.8.1.min.custom.js
+2025-08-22 04:05:31.036 [INFO] [HTTP 200] https://pje.tjdft.jus.br/pje/js/fuse.min.js
+2025-08-22 04:05:31.041 [INFO] [HTTP 200] https://pje.tjdft.jus.br/pje/js/bootstrap/bootstrap.min.js
+2025-08-22 04:05:31.044 [INFO] [HTTP 200] https://pje.tjdft.jus.br/pje/js/jquery-2.1.4.min.js
+2025-08-22 04:05:31.048 [INFO] [HTTP 200] https://pje.tjdft.jus.br/pje/js/select2/select2.min.js
+2025-08-22 04:05:31.054 [INFO] [HTTP 200] https://pje.tjdft.jus.br/pje/stylesheet/estilos/font-awesome/v5.11.2/css/all.min.css
+2025-08-22 04:05:31.069 [INFO] [HTTP 200] https://pje.tjdft.jus.br/pje/js/mousetrap/mousetrap.min.js
+2025-08-22 04:05:31.121 [INFO] [HTTP 200] https://pje.tjdft.jus.br/pje/js/mousetrap/plugins/global-bind/mousetrap-global-bind.js
+2025-08-22 04:05:31.146 [INFO] [HTTP 200] https://pje.tjdft.jus.br/pje/js/pje/menu.js
+2025-08-22 04:05:31.152 [INFO] [HTTP 200] https://pje.tjdft.jus.br/pje/js/global.js?v=20220316
+2025-08-22 04:05:31.169 [INFO] [HTTP 200] https://pje.tjdft.jus.br/pje/js/sweetalert2.all.min.js
+2025-08-22 04:05:31.176 [INFO] [HTTP 200] https://pje.tjdft.jus.br/pje/js/pjeNotificacao.js
+2025-08-22 04:05:31.183 [INFO] [HTTP 200] https://pje.tjdft.jus.br/pje/js/pje.js
+2025-08-22 04:05:31.185 [INFO] [HTTP 200] https://pje.tjdft.jus.br/pje/js/pjeOffice.js
+2025-08-22 04:05:31.188 [INFO] [HTTP 200] https://pje.tjdft.jus.br/pje/js/signerApplet.js
+2025-08-22 04:05:31.191 [INFO] [HTTP 200] https://pje.tjdft.jus.br/pje/a4j/g/3_3_3.Final/org/richfaces/ui.pack.js
+2025-08-22 04:05:31.195 [INFO] [HTTP 200] https://pje.tjdft.jus.br/pje/stylesheet/estilos/font-awesome/v5.11.2/css/v4-shims.min.css
+2025-08-22 04:05:31.198 [INFO] [HTTP 200] https://pje.tjdft.jus.br/pje/img/logo-pje-simbolo-negativo.svg
+2025-08-22 04:05:31.199 [INFO] [HTTP 200] https://pje.tjdft.jus.br/pje/img/usuario-avatar.png
+2025-08-22 04:05:31.202 [INFO] [HTTP 200] https://pje.tjdft.jus.br/pje/img/localizacao/favorite-16x16.png
+2025-08-22 04:05:31.204 [INFO] [HTTP 200] https://pje.tjdft.jus.br/pje/img/localizacao/favorite-16x16-disabled.png
+2025-08-22 04:05:31.206 [INFO] [HTTP 200] https://pje.tjdft.jus.br/pje/stylesheet/estilos/bootstrap/fonts/opensans-regular-webfont.woff2
+2025-08-22 04:05:31.207 [INFO] [HTTP 200] https://pje.tjdft.jus.br/pje/img/pjeMini.png
+2025-08-22 04:05:31.209 [INFO] [HTTP 200] https://pje.tjdft.jus.br/pje/a4j/s/3_3_3.Finalorg/richfaces/renderkit/html/css/extended_classes.xcss/DATB/eAELXT5DOhSIAQ!sA18_
+2025-08-22 04:05:31.210 [INFO] [HTTP 200] https://pje.tjdft.jus.br/pje/stylesheet/estilos/richfaces/img/autocomplete-icon.png
+2025-08-22 04:11:33.694 [INFO] === Início do login_once ===
+2025-08-22 04:11:33.695 [INFO] Perfil origem: C:\Users\mario\AppData\Local\Google\Chrome\User Data -> Default
+2025-08-22 04:11:33.695 [INFO] Perfil automação (destino): C:\Users\mario\AppData\Local\ChromeAutomation\User Data -> Default
+2025-08-22 04:11:33.695 [INFO] Fechando processos do Chrome para liberar arquivos...
+2025-08-22 04:11:34.336 [INFO] [COPY] Local State -> OK
+2025-08-22 04:11:34.338 [INFO] [COPY] Preferences -> OK
+2025-08-22 04:11:34.340 [INFO] [COPY] Secure Preferences -> OK
+2025-08-22 04:11:34.343 [INFO] [COPY] Login Data -> OK
+2025-08-22 04:11:34.344 [INFO] [COPY] Login Data For Account -> OK
+2025-08-22 04:11:34.348 [INFO] [COPY] Web Data -> OK
+2025-08-22 04:11:34.399 [INFO] [COPY] History -> OK
+2025-08-22 04:11:37.947 [INFO] [COPY] Extensions/ -> OK
+2025-08-22 04:11:37.948 [INFO] Cópia essencial concluída.
+2025-08-22 04:11:37.948 [INFO] Abrindo Chrome com perfil de automação (não-padrão), extensões (se copiadas) e sem flags problemáticas...
+2025-08-22 04:11:37.948 [DEBUG] Using proactor: IocpProactor
+2025-08-22 04:11:39.875 [INFO] [PAGE] Reutilizando aba existente: about:blank
+2025-08-22 04:11:39.908 [INFO] [NAV 1/3] Abrindo página inicial do PJe: https://pje.tjdft.jus.br/pje/
+2025-08-22 04:11:39.956 [INFO] [HTTP 200] https://pje.tjdft.jus.br/pje/
+2025-08-22 04:11:40.008 [INFO] [NAV] OK
+2025-08-22 04:11:40.012 [INFO] [NAV 1/3] Tentando acessar painel (o PJe redireciona para login se necessário): https://pje.tjdft.jus.br/pje/ng2/dev.seam#/painel-usuario-interno
+2025-08-22 04:11:40.282 [INFO] [HTTP 302] https://pje.tjdft.jus.br/pje/ng2/dev.seam
+2025-08-22 04:11:40.365 [INFO] [HTTP 302] https://pje.tjdft.jus.br/pje/login.seam;jsessionid=1Uo_f7LIS5UK3XxOz-VlnwvIgKS_-cIjiNR6aEKS.hc-zdu144:pje-internet-zdu144?cid=53645
+2025-08-22 04:11:40.571 [INFO] [HTTP 200] https://sso.cloud.pje.jus.br/auth/realms/pje/protocol/openid-connect/auth?response_type=code&client_id=pje-tjdft-1g&redirect_uri=https%3A%2F%2Fpje.tjdft.jus.br%2Fpje%2Flogin.seam%3Bjsessionid%3D1Uo_f7LIS5UK3XxOz-VlnwvIgKS_-cIjiNR6aEKS.hc-zdu144%3Apje-internet-zdu144?cid%3D53645&state=24e5e94b-a44c-4c2d-bd32-1f4aef187b57&login=true&scope=openid
+2025-08-22 04:11:40.672 [INFO] [HTTP 200] https://pje.tjdft.jus.br/pje/img/brasaoRep.png
+2025-08-22 04:11:40.821 [INFO] [NAV] OK
+2025-08-22 04:11:40.822 [INFO] Aguardando conclusão do login no PJe...
+2025-08-22 04:11:40.823 [INFO] URL atual: https://sso.cloud.pje.jus.br/auth/realms/pje/protocol/openid-connect/auth?response_type=code&client_id=pje-tjdft-1g&redirect_uri=https%3A%2F%2Fpje.tjdft.jus.br%2Fpje%2Flogin.seam%3Bjsessionid%3D1Uo_f7LIS5UK3XxOz-VlnwvIgKS_-cIjiNR6aEKS.hc-zdu144%3Apje-internet-zdu144?cid%3D53645&state=24e5e94b-a44c-4c2d-bd32-1f4aef187b57&login=true&scope=openid#/painel-usuario-interno
+2025-08-22 04:12:26.878 [WARNING] Falha ao salvar trace: Tracing.stop: 'str' object has no attribute 'error_text'
+2025-08-22 04:12:26.881 [INFO] [HTTP 200] https://pje.tjdft.jus.br/pje/seam/resource/rest/pje-legacy/parametros/fale-conosco-info
+2025-08-22 04:12:26.882 [INFO] [HTTP 200] https://pje.tjdft.jus.br/pje/seam/resource/rest/pje-legacy/status/versao
+2025-08-22 04:12:26.883 [INFO] [HTTP 200] https://pje.tjdft.jus.br/pje/seam/resource/rest/pje-legacy/parametros/custom-login-info
+2025-08-22 04:12:26.906 [INFO] [HTTP 302] https://pje.tjdft.jus.br/pje/login.seam;jsessionid=1Uo_f7LIS5UK3XxOz-VlnwvIgKS_-cIjiNR6aEKS.hc-zdu144:pje-internet-zdu144?cid=53645&state=24e5e94b-a44c-4c2d-bd32-1f4aef187b57&session_state=183c4b91-d2b6-4e1e-aebc-766bfe72970a&code=daf0cf97-4745-4297-95dc-fc60ac561740.183c4b91-d2b6-4e1e-aebc-766bfe72970a.883559c5-896a-45c9-9fca-4a86ff362dd9
+2025-08-22 04:12:26.907 [INFO] [HTTP 302] https://pje.tjdft.jus.br/pje/login.seam;jsessionid=1Uo_f7LIS5UK3XxOz-VlnwvIgKS_-cIjiNR6aEKS.hc-zdu144:pje-internet-zdu144?cid=53645
+2025-08-22 04:12:26.909 [INFO] [HTTP 200] https://pje.tjdft.jus.br/pje/ng2/dev.seam
+2025-08-22 18:49:42.486 [INFO] === Início do login_once ===
+2025-08-22 18:49:42.495 [INFO] Perfil origem: C:\Users\mario\AppData\Local\Google\Chrome\User Data -> Default
+2025-08-22 18:49:42.495 [INFO] Perfil automação (destino): C:\Users\mario\AppData\Local\ChromeAutomation\User Data -> Default
+2025-08-22 18:49:42.495 [INFO] Fechando processos do Chrome para liberar arquivos...
+2025-08-22 18:49:43.272 [INFO] [COPY] Local State -> OK
+2025-08-22 18:49:43.274 [INFO] [COPY] Preferences -> OK
+2025-08-22 18:49:43.275 [INFO] [COPY] Secure Preferences -> OK
+2025-08-22 18:49:43.280 [INFO] [COPY] Login Data -> OK
+2025-08-22 18:49:43.285 [INFO] [COPY] Login Data For Account -> OK
+2025-08-22 18:49:43.293 [INFO] [COPY] Web Data -> OK
+2025-08-22 18:49:43.384 [INFO] [COPY] History -> OK
+2025-08-22 18:49:46.613 [INFO] [COPY] Extensions/ -> OK
+2025-08-22 18:49:46.614 [INFO] Cópia essencial concluída.
+2025-08-22 18:49:46.614 [INFO] Abrindo Chrome com perfil de automação (não-padrão), extensões (se copiadas) e sem flags problemáticas...
+2025-08-22 18:49:46.614 [DEBUG] Using proactor: IocpProactor
+2025-08-22 18:49:50.261 [INFO] [PAGE] Reutilizando aba existente: about:blank
+2025-08-22 18:49:50.288 [INFO] [NAV 1/3] Abrindo página inicial do PJe: https://pje.tjdft.jus.br/pje/
+2025-08-22 18:49:50.324 [INFO] [HTTP 200] https://pje.tjdft.jus.br/pje/
+2025-08-22 18:49:50.353 [INFO] [NAV] OK
+2025-08-22 18:49:50.353 [INFO] [NAV 1/3] Tentando acessar painel (o PJe redireciona para login se necessário): https://pje.tjdft.jus.br/pje/ng2/dev.seam#/painel-usuario-interno
+2025-08-22 18:49:50.517 [INFO] [HTTP 302] https://pje.tjdft.jus.br/pje/ng2/dev.seam
+2025-08-22 18:49:50.606 [INFO] [HTTP 302] https://pje.tjdft.jus.br/pje/login.seam;jsessionid=7rX5R1TYDtfV8fXM0opQSVbZ7XXonR0hfr2iTVQ1.hc-zdu119:pje-internet-zdu119?cid=245064
+2025-08-22 18:49:50.825 [INFO] [HTTP 200] https://sso.cloud.pje.jus.br/auth/realms/pje/protocol/openid-connect/auth?response_type=code&client_id=pje-tjdft-1g&redirect_uri=https%3A%2F%2Fpje.tjdft.jus.br%2Fpje%2Flogin.seam%3Bjsessionid%3D7rX5R1TYDtfV8fXM0opQSVbZ7XXonR0hfr2iTVQ1.hc-zdu119%3Apje-internet-zdu119?cid%3D245064&state=f9094dbc-9106-4cf8-b46c-ed257e468d45&login=true&scope=openid
+2025-08-22 18:49:50.887 [INFO] [HTTP 200] https://pje.tjdft.jus.br/pje/img/brasaoRep.png
+2025-08-22 18:49:50.961 [INFO] [NAV] OK
+2025-08-22 18:49:50.961 [INFO] Aguardando conclusão do login no PJe...
+2025-08-22 18:49:50.962 [INFO] URL atual: https://sso.cloud.pje.jus.br/auth/realms/pje/protocol/openid-connect/auth?response_type=code&client_id=pje-tjdft-1g&redirect_uri=https%3A%2F%2Fpje.tjdft.jus.br%2Fpje%2Flogin.seam%3Bjsessionid%3D7rX5R1TYDtfV8fXM0opQSVbZ7XXonR0hfr2iTVQ1.hc-zdu119%3Apje-internet-zdu119?cid%3D245064&state=f9094dbc-9106-4cf8-b46c-ed257e468d45&login=true&scope=openid#/painel-usuario-interno
+2025-08-22 18:51:11.482 [WARNING] Falha ao salvar trace: Tracing.stop: 'str' object has no attribute 'error_text'
+2025-08-22 18:51:11.494 [INFO] [HTTP 200] https://pje.tjdft.jus.br/pje/seam/resource/rest/pje-legacy/status/versao
+2025-08-22 18:51:11.496 [INFO] [HTTP 200] https://pje.tjdft.jus.br/pje/seam/resource/rest/pje-legacy/parametros/fale-conosco-info
+2025-08-22 18:51:11.498 [INFO] [HTTP 200] https://pje.tjdft.jus.br/pje/seam/resource/rest/pje-legacy/parametros/custom-login-info
+2025-08-22 18:51:39.928 [INFO] === Início do login_once ===
+2025-08-22 18:51:39.929 [INFO] Perfil origem: C:\Users\mario\AppData\Local\Google\Chrome\User Data -> Default
+2025-08-22 18:51:39.929 [INFO] Perfil automação (destino): C:\Users\mario\AppData\Local\ChromeAutomation\User Data -> Default
+2025-08-22 18:51:39.929 [INFO] Fechando processos do Chrome para liberar arquivos...
+2025-08-22 18:51:40.447 [INFO] [COPY] Local State -> OK
+2025-08-22 18:51:40.449 [INFO] [COPY] Preferences -> OK
+2025-08-22 18:51:40.450 [INFO] [COPY] Secure Preferences -> OK
+2025-08-22 18:51:40.452 [INFO] [COPY] Login Data -> OK
+2025-08-22 18:51:40.453 [INFO] [COPY] Login Data For Account -> OK
+2025-08-22 18:51:40.456 [INFO] [COPY] Web Data -> OK
+2025-08-22 18:51:40.506 [INFO] [COPY] History -> OK
+2025-08-22 18:51:42.600 [INFO] [COPY] Extensions/ -> OK
+2025-08-22 18:51:42.601 [INFO] Cópia essencial concluída.
+2025-08-22 18:51:42.601 [INFO] Abrindo Chrome com perfil de automação (não-padrão), extensões (se copiadas) e sem flags problemáticas...
+2025-08-22 18:51:42.601 [DEBUG] Using proactor: IocpProactor
+2025-08-22 18:51:44.155 [INFO] [PAGE] Reutilizando aba existente: about:blank
+2025-08-22 18:51:44.172 [INFO] [NAV 1/3] Abrindo página inicial do PJe: https://pje.tjdft.jus.br/pje/
+2025-08-22 18:51:44.206 [INFO] [HTTP 200] https://pje.tjdft.jus.br/pje/
+2025-08-22 18:51:44.245 [INFO] [NAV] OK
+2025-08-22 18:51:44.246 [INFO] [NAV 1/3] Tentando acessar painel (o PJe redireciona para login se necessário): https://pje.tjdft.jus.br/pje/ng2/dev.seam#/painel-usuario-interno
+2025-08-22 18:51:44.480 [INFO] [HTTP 302] https://pje.tjdft.jus.br/pje/ng2/dev.seam
+2025-08-22 18:51:44.553 [INFO] [HTTP 302] https://pje.tjdft.jus.br/pje/login.seam?cid=245669
+2025-08-22 18:51:44.782 [INFO] [HTTP 200] https://sso.cloud.pje.jus.br/auth/realms/pje/protocol/openid-connect/auth?response_type=code&client_id=pje-tjdft-1g&redirect_uri=https%3A%2F%2Fpje.tjdft.jus.br%2Fpje%2Flogin.seam?cid%3D245669&state=741ee8c4-4545-45fb-b8b5-7883899b27b1&login=true&scope=openid
+2025-08-22 18:51:44.884 [INFO] [HTTP 200] https://pje.tjdft.jus.br/pje/img/brasaoRep.png
+2025-08-22 18:51:44.991 [INFO] [NAV] OK
+2025-08-22 18:51:44.992 [INFO] Aguardando conclusão do login no PJe...
+2025-08-22 18:51:44.992 [INFO] URL atual: https://sso.cloud.pje.jus.br/auth/realms/pje/protocol/openid-connect/auth?response_type=code&client_id=pje-tjdft-1g&redirect_uri=https%3A%2F%2Fpje.tjdft.jus.br%2Fpje%2Flogin.seam?cid%3D245669&state=741ee8c4-4545-45fb-b8b5-7883899b27b1&login=true&scope=openid#/painel-usuario-interno

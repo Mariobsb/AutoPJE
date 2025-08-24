@@ -1,0 +1,175 @@
+{
+    "title": "clicar no botão de ação + listar opções + clicar",
+    "selectorAttribute": "teste.",
+    "steps": [
+        {
+            "type": "setViewport",
+            "width": 1920,
+            "height": 911,
+            "deviceScaleFactor": 1,
+            "isMobile": false,
+            "hasTouch": false,
+            "isLandscape": false
+        },
+        {
+            "type": "navigate",
+            "url": "https://pje.tjdft.jus.br/pje/ng2/dev.seam#/painel-usuario-interno",
+            "assertedEvents": [
+                {
+                    "type": "navigation",
+                    "url": "https://pje.tjdft.jus.br/pje/ng2/dev.seam#/painel-usuario-interno",
+                    "title": "· Processo Judicial Eletrônico - 1º Grau"
+                }
+            ]
+        },
+        {
+            "type": "click",
+            "target": "main",
+            "selectors": [
+                [
+                    "div.navbar-collapse"
+                ],
+                [
+                    "xpath///*[@id=\"barraSuperiorPrincipal\"]/div/div[2]"
+                ],
+                [
+                    "pierce/div.navbar-collapse"
+                ]
+            ],
+            "offsetY": 33,
+            "offsetX": 648
+        },
+        {
+            "type": "click",
+            "target": "main",
+            "selectors": [
+                [
+                    "div.ml-5 i"
+                ],
+                [
+                    "xpath///*[@id=\"btnTransicoesTarefa\"]/i"
+                ],
+                [
+                    "pierce/div.ml-5 i"
+                ]
+            ],
+            "offsetY": 0,
+            "offsetX": 11.3125,
+            "frame": [
+                0
+            ]
+        },
+        {
+            "type": "click",
+            "target": "main",
+            "selectors": [
+                [
+                    "div.ml-5 i"
+                ],
+                [
+                    "xpath///*[@id=\"btnTransicoesTarefa\"]/i"
+                ],
+                [
+                    "pierce/div.ml-5 i"
+                ]
+            ],
+            "offsetY": 5,
+            "offsetX": 10.3125,
+            "frame": [
+                0
+            ]
+        },
+        {
+            "type": "click",
+            "target": "main",
+            "selectors": [
+                [
+                    "#divRightPanel li:nth-of-type(3) > a"
+                ],
+                [
+                    "xpath///*[@id=\"frameTarefas\"]/div/div[4]/div[2]/ul/li[3]/a"
+                ],
+                [
+                    "pierce/#divRightPanel li:nth-of-type(3) > a"
+                ],
+                [
+                    "aria/Enviar ao magistrado"
+                ],
+                [
+                    "text/Enviar ao magistrado"
+                ]
+            ],
+            "offsetY": 9,
+            "offsetX": 90.234375,
+            "frame": [
+                0
+            ]
+        },
+        {
+            "type": "click",
+            "target": "main",
+            "selectors": [
+                [
+                    "#taskInstanceForm\\:ProcessoFluxorevisarMinuta-7388710968\\:ProcessoFluxorevisarMinuta-7388710968divTipoModelo"
+                ],
+                [
+                    "xpath///*[@id=\"taskInstanceForm:ProcessoFluxorevisarMinuta-7388710968:ProcessoFluxorevisarMinuta-7388710968divTipoModelo\"]"
+                ],
+                [
+                    "pierce/#taskInstanceForm\\:ProcessoFluxorevisarMinuta-7388710968\\:ProcessoFluxorevisarMinuta-7388710968divTipoModelo"
+                ]
+            ],
+            "offsetY": 75,
+            "offsetX": 986,
+            "frame": [
+                0,
+                0
+            ]
+        },
+        {
+            "type": "click",
+            "target": "main",
+            "selectors": [
+                [
+                    "div.ml-5 i"
+                ],
+                [
+                    "xpath///*[@id=\"btnTransicoesTarefa\"]/i"
+                ],
+                [
+                    "pierce/div.ml-5 i"
+                ]
+            ],
+            "offsetY": 5,
+            "offsetX": 8.3125,
+            "frame": [
+                0
+            ]
+        },
+        {
+            "type": "doubleClick",
+            "target": "main",
+            "selectors": [
+                [
+                    "div.ml-5 i"
+                ],
+                [
+                    "xpath///*[@id=\"btnTransicoesTarefa\"]/i"
+                ],
+                [
+                    "pierce/div.ml-5 i"
+                ]
+            ],
+            "offsetY": 5,
+            "offsetX": 8.3125,
+            "frame": [
+                0
+            ],
+            "assertedEvents": [
+                {
+                    "type": "navigation"
+                }
+            ]
+        }
+    ]
+}

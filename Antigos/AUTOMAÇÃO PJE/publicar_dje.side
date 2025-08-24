@@ -1,0 +1,129 @@
+{
+  "id": "bc6f5aca-9dec-4d61-b004-6b93dd21cd9d",
+  "version": "2.0",
+  "name": "publicar_dje",
+  "url": "https://pje.tjdft.jus.br",
+  "tests": [{
+    "id": "8237a4f7-a0c1-497d-8a5c-677e7a4490f1",
+    "name": "Publicar DJE.",
+    "commands": [{
+      "id": "a88d2957-3afc-4da4-8816-1cbbd7abfd16",
+      "comment": "",
+      "command": "open",
+      "target": "/pje/ng2/dev.seam",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d2ba17f0-f81d-4477-857e-6e0aca8fc9a8",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1936x1048",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "abbbf140-c1aa-4db2-9a06-add96fe34bad",
+      "comment": "",
+      "command": "selectFrame",
+      "target": "index=0",
+      "targets": [
+        ["index=0"]
+      ],
+      "value": ""
+    }, {
+      "id": "c2f71265-de2a-47c7-82c7-965e1e1cf423",
+      "comment": "",
+      "command": "click",
+      "target": "css=.col-md-4 .menuItem:nth-child(51) .nome",
+      "targets": [
+        ["css=.col-md-4 .menuItem:nth-child(51) .nome", "css:finder"],
+        ["xpath=(//div[@id='divTarefasPendentes']/div[4]/div[51]/div/a/div/span)[3]", "xpath:idRelative"],
+        ["xpath=//div[3]/tarefas/div/div[4]/div[51]/div/a/div/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "90f647e5-0f9e-43d5-afae-c031656fdaae",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,0)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5b8d41f2-df1e-4a84-95b2-a76447095078",
+      "comment": "",
+      "command": "click",
+      "target": "css=.botao-selecionar:nth-child(2) > .far",
+      "targets": [
+        ["css=.botao-selecionar:nth-child(2) > .far", "css:finder"],
+        ["xpath=//div[@id='acoes-processos-selecionados']/div/div/button/i", "xpath:idRelative"],
+        ["xpath=//div/button/i", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "dbe9ee32-427d-49a0-a021-154151096672",
+      "comment": "",
+      "command": "click",
+      "target": "css=.fa-arrow-circle-right",
+      "targets": [
+        ["css=.fa-arrow-circle-right", "css:finder"],
+        ["xpath=//div[@id='acoes-processos-selecionados']/div/div/button[2]/i", "xpath:idRelative"],
+        ["xpath=//div/button[2]/i", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e4560fc7-9332-413e-b107-cbdb2e61545b",
+      "comment": "",
+      "command": "click",
+      "target": "id=transicoes",
+      "targets": [
+        ["id=transicoes", "id"],
+        ["name=transicoes", "name"],
+        ["css=#transicoes", "css:finder"],
+        ["xpath=//select[@id='transicoes']", "xpath:attributes"],
+        ["xpath=//div[@id='modalMovimentarEmLote']/div/div/div[2]/div/select", "xpath:idRelative"],
+        ["xpath=//div/div[2]/div/select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "45d9be01-5711-4fbb-9987-1f29c4d2e60b",
+      "comment": "",
+      "command": "select",
+      "target": "id=transicoes",
+      "targets": [],
+      "value": "label=Enviar para disponibilização no DJE"
+    }, {
+      "id": "ddcce697-edfd-443f-b312-82cb0d82e801",
+      "comment": "",
+      "command": "click",
+      "target": "css=.modal-footer:nth-child(4) .btn-default",
+      "targets": [
+        ["css=.modal-footer:nth-child(4) .btn-default", "css:finder"],
+        ["xpath=(//button[@type='button'])[35]", "xpath:attributes"],
+        ["xpath=//div[@id='modalMovimentarEmLote']/div/div/div[3]/div/button", "xpath:idRelative"],
+        ["xpath=//div[3]/div/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f6432f00-ea94-407e-a66d-587b41fbc0c2",
+      "comment": "",
+      "command": "click",
+      "target": "css=.col-sm-12:nth-child(2) > .btn-danger",
+      "targets": [
+        ["css=.col-sm-12:nth-child(2) > .btn-danger", "css:finder"],
+        ["xpath=(//button[@type='button'])[16]", "xpath:attributes"],
+        ["xpath=//div[@id='modalMovimentarEmLote']/div/div/div[3]/div[2]/button[2]", "xpath:idRelative"],
+        ["xpath=//div[2]/button[2]", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "9ad5f0e4-b3df-4e78-ae41-5322b006d855",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["8237a4f7-a0c1-497d-8a5c-677e7a4490f1"]
+  }],
+  "urls": ["https://pje.tjdft.jus.br/"],
+  "plugins": []
+}

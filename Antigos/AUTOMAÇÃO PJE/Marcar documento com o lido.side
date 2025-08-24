@@ -1,0 +1,938 @@
+{
+  "id": "41e55570-ab43-4cf7-8044-a8e36a579197",
+  "version": "2.0",
+  "name": "Marcar documento com o lido",
+  "url": "https://pje.tjdft.jus.br",
+  "tests": [{
+    "id": "6e1d6e75-ee2a-4d1a-ba24-1ae77e09c088",
+    "name": "Analisar documentos não lidos",
+    "commands": [{
+      "id": "d268ae71-c31b-43a2-a43c-0fe752344eae",
+      "comment": "",
+      "command": "open",
+      "target": "/pje/ng2/dev.seam",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e8ec4ad4-94f9-4109-9a35-f0506e744d2e",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1936x1048",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "cfcd849e-d9a6-4ecf-a9c0-ad303ecce169",
+      "comment": "",
+      "command": "selectFrame",
+      "target": "index=0",
+      "targets": [
+        ["index=0"]
+      ],
+      "value": ""
+    }, {
+      "id": "b0885de1-4aff-4da3-9002-caec87f99b1a",
+      "comment": "",
+      "command": "click",
+      "target": "css=.col-md-4 .menuItem:nth-child(25) .nome",
+      "targets": [
+        ["css=.col-md-4 .menuItem:nth-child(25) .nome", "css:finder"],
+        ["xpath=(//div[@id='divTarefasPendentes']/div[4]/div[25]/div/a/div/span)[3]", "xpath:idRelative"],
+        ["xpath=//div[3]/tarefas/div/div[4]/div[25]/div/a/div/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c650133a-156c-416b-a1a1-00d2428c9a94",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,0)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "fe898fbb-f8f9-4b76-97e2-aa00e528a96e",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ng-star-inserted:nth-child(1) > .ng-star-inserted div > .tarefa-numero-processo",
+      "targets": [
+        ["css=.ng-star-inserted:nth-child(1) > .ng-star-inserted div > .tarefa-numero-processo", "css:finder"],
+        ["xpath=//div[@id='processosTarefa']/p-datalist/div/div/ul/li/processo-datalist-card/div/div[3]/a/div/span[2]", "xpath:idRelative"],
+        ["xpath=//div[3]/a/div/span[2]", "xpath:position"],
+        ["xpath=//span[contains(.,'APOrd 0707771-67.2024.8.07.0004 ')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "0e11ef9f-6d8e-4ea9-85f3-50f832e5f13e",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.selecionado div > .tarefa-numero-processo",
+      "targets": [
+        ["css=.selecionado div > .tarefa-numero-processo", "css:finder"],
+        ["xpath=//div[@id='processosTarefa']/p-datalist/div/div/ul/li/processo-datalist-card/div/div[3]/a/div/span[2]", "xpath:idRelative"],
+        ["xpath=//div[3]/a/div/span[2]", "xpath:position"],
+        ["xpath=//span[contains(.,'APOrd 0707771-67.2024.8.07.0004 ')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "dcf89784-5e9c-4d49-9080-671b1329d1a0",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=.selecionado div > .tarefa-numero-processo",
+      "targets": [
+        ["css=.selecionado div > .tarefa-numero-processo", "css:finder"],
+        ["xpath=//div[@id='processosTarefa']/p-datalist/div/div/ul/li/processo-datalist-card/div/div[3]/a/div/span[2]", "xpath:idRelative"],
+        ["xpath=//div[3]/a/div/span[2]", "xpath:position"],
+        ["xpath=//span[contains(.,'APOrd 0707771-67.2024.8.07.0004 ')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "9ee06caa-7196-4062-b6ea-c473c939e4dc",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.fa-share-square",
+      "targets": [
+        ["css=.fa-share-square", "css:finder"],
+        ["xpath=//button[@id='btnTransicoesTarefa']/i", "xpath:idRelative"],
+        ["xpath=//div[3]/div[2]/button/i", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1428300a-2740-4ff9-a4a6-d4f736cb3de7",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=.fa-share-square",
+      "targets": [
+        ["css=.fa-share-square", "css:finder"],
+        ["xpath=//button[@id='btnTransicoesTarefa']/i", "xpath:idRelative"],
+        ["xpath=//div[3]/div[2]/button/i", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "18276c26-bcc7-4e54-ae6a-7ff017814651",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "id=btnTransicoesTarefa",
+      "targets": [
+        ["id=btnTransicoesTarefa", "id"],
+        ["css=#btnTransicoesTarefa", "css:finder"],
+        ["xpath=//button[@id='btnTransicoesTarefa']", "xpath:attributes"],
+        ["xpath=//div[@id='frameTarefas']/div/div[3]/div[2]/button", "xpath:idRelative"],
+        ["xpath=//div[3]/div[2]/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1932bcc9-1432-46b1-b4ab-c8821490f013",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "id=btnTransicoesTarefa",
+      "targets": [
+        ["id=btnTransicoesTarefa", "id"],
+        ["css=#btnTransicoesTarefa", "css:finder"],
+        ["xpath=//button[@id='btnTransicoesTarefa']", "xpath:attributes"],
+        ["xpath=//div[@id='frameTarefas']/div/div[3]/div[2]/button", "xpath:idRelative"],
+        ["xpath=//div[3]/div[2]/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5d34108c-2547-459a-a2ab-5b4cceead44a",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.fa-share-square",
+      "targets": [
+        ["css=.fa-share-square", "css:finder"],
+        ["xpath=//button[@id='btnTransicoesTarefa']/i", "xpath:idRelative"],
+        ["xpath=//div[3]/div[2]/button/i", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4e1a9d9a-7e6a-457b-a2ca-06bb924637f1",
+      "comment": "",
+      "command": "click",
+      "target": "css=.fa-share-square",
+      "targets": [
+        ["css=.fa-share-square", "css:finder"],
+        ["xpath=//button[@id='btnTransicoesTarefa']/i", "xpath:idRelative"],
+        ["xpath=//div[3]/div[2]/button/i", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "79765499-b613-4ad0-99c6-691588926fb2",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=.fa-share-square",
+      "targets": [
+        ["css=.fa-share-square", "css:finder"],
+        ["xpath=//button[@id='btnTransicoesTarefa']/i", "xpath:idRelative"],
+        ["xpath=//div[3]/div[2]/button/i", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2bd71baa-c3af-4d3e-a9e7-c31e535e1b86",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "id=btnTransicoesTarefa",
+      "targets": [
+        ["id=btnTransicoesTarefa", "id"],
+        ["css=#btnTransicoesTarefa", "css:finder"],
+        ["xpath=//button[@id='btnTransicoesTarefa']", "xpath:attributes"],
+        ["xpath=//div[@id='frameTarefas']/div/div[3]/div[2]/button", "xpath:idRelative"],
+        ["xpath=//div[3]/div[2]/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1609e918-653e-4a1a-ab51-6718f0a6181d",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "id=btnTransicoesTarefa",
+      "targets": [
+        ["id=btnTransicoesTarefa", "id"],
+        ["css=#btnTransicoesTarefa", "css:finder"],
+        ["xpath=//button[@id='btnTransicoesTarefa']", "xpath:attributes"],
+        ["xpath=//div[@id='frameTarefas']/div/div[3]/div[2]/button", "xpath:idRelative"],
+        ["xpath=//div[3]/div[2]/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "16bb5976-57b0-465e-8173-1698b804627f",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Marcar documento como lido",
+      "targets": [
+        ["linkText=Marcar documento como lido", "linkText"],
+        ["css=.dropdown-menu > .ng-star-inserted > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Marcar documento como lido')]", "xpath:link"],
+        ["xpath=//div[@id='frameTarefas']/div/div[3]/div[2]/ul/li/a", "xpath:idRelative"],
+        ["xpath=//div[3]/div[2]/ul/li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Marcar documento como lido')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c936cf58-da57-47eb-b467-b30e2b07ec76",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ng-star-inserted:nth-child(2) > .ng-star-inserted > .datalist-content div > .tarefa-numero-processo",
+      "targets": [
+        ["css=.ng-star-inserted:nth-child(2) > .ng-star-inserted > .datalist-content div > .tarefa-numero-processo", "css:finder"],
+        ["xpath=//div[@id='processosTarefa']/p-datalist/div/div/ul/li[2]/processo-datalist-card/div/div[3]/a/div/span[2]", "xpath:idRelative"],
+        ["xpath=//li[2]/processo-datalist-card/div/div[3]/a/div/span[2]", "xpath:position"],
+        ["xpath=//span[contains(.,'IP 0708240-16.2024.8.07.0004 ')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f518e4ab-7adc-41fe-9e9b-0dac9c4b7f6f",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,0)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a600bfe5-8586-4439-aaee-da99c6490ef8",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ng-star-inserted:nth-child(3) div > .tarefa-numero-processo",
+      "targets": [
+        ["css=.ng-star-inserted:nth-child(3) div > .tarefa-numero-processo", "css:finder"],
+        ["xpath=//div[@id='processosTarefa']/p-datalist/div/div/ul/li[3]/processo-datalist-card/div/div[3]/a/div/span[2]", "xpath:idRelative"],
+        ["xpath=//li[3]/processo-datalist-card/div/div[3]/a/div/span[2]", "xpath:position"],
+        ["xpath=//span[contains(.,'AcNãoPerPenal 0700922-79.2024.8.07.0004 ')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "4be7dc38-ab18-488b-8dfa-7f68cb69f530",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "id=btnTransicoesTarefa",
+      "targets": [
+        ["id=btnTransicoesTarefa", "id"],
+        ["css=#btnTransicoesTarefa", "css:finder"],
+        ["xpath=//button[@id='btnTransicoesTarefa']", "xpath:attributes"],
+        ["xpath=//div[@id='frameTarefas']/div/div[3]/div[2]/button", "xpath:idRelative"],
+        ["xpath=//div[3]/div[2]/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8a2fb48d-357e-41e8-bafd-c82a8e618826",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "id=btnTransicoesTarefa",
+      "targets": [
+        ["id=btnTransicoesTarefa", "id"],
+        ["css=#btnTransicoesTarefa", "css:finder"],
+        ["xpath=//button[@id='btnTransicoesTarefa']", "xpath:attributes"],
+        ["xpath=//div[@id='frameTarefas']/div/div[3]/div[2]/button", "xpath:idRelative"],
+        ["xpath=//div[3]/div[2]/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d6198368-96b3-4d1c-91a6-e93250515145",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.fa-share-square",
+      "targets": [
+        ["css=.fa-share-square", "css:finder"],
+        ["xpath=//button[@id='btnTransicoesTarefa']/i", "xpath:idRelative"],
+        ["xpath=//div[3]/div[2]/button/i", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "347db9a5-30ae-4ad6-92e3-9b317f154568",
+      "comment": "",
+      "command": "click",
+      "target": "css=.fa-share-square",
+      "targets": [
+        ["css=.fa-share-square", "css:finder"],
+        ["xpath=//button[@id='btnTransicoesTarefa']/i", "xpath:idRelative"],
+        ["xpath=//div[3]/div[2]/button/i", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ba5e2e1e-075d-4a48-81d0-7202fbe80e08",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=.fa-share-square",
+      "targets": [
+        ["css=.fa-share-square", "css:finder"],
+        ["xpath=//button[@id='btnTransicoesTarefa']/i", "xpath:idRelative"],
+        ["xpath=//div[3]/div[2]/button/i", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7cbc3e24-d7ca-4330-9d09-7045aca614f5",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "id=btnTransicoesTarefa",
+      "targets": [
+        ["id=btnTransicoesTarefa", "id"],
+        ["css=#btnTransicoesTarefa", "css:finder"],
+        ["xpath=//button[@id='btnTransicoesTarefa']", "xpath:attributes"],
+        ["xpath=//div[@id='frameTarefas']/div/div[3]/div[2]/button", "xpath:idRelative"],
+        ["xpath=//div[3]/div[2]/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8cb98bd4-8ddc-4db3-a922-083be704dc5f",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "id=btnTransicoesTarefa",
+      "targets": [
+        ["id=btnTransicoesTarefa", "id"],
+        ["css=#btnTransicoesTarefa", "css:finder"],
+        ["xpath=//button[@id='btnTransicoesTarefa']", "xpath:attributes"],
+        ["xpath=//div[@id='frameTarefas']/div/div[3]/div[2]/button", "xpath:idRelative"],
+        ["xpath=//div[3]/div[2]/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "000ececb-368f-472a-b243-f277f982eedc",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Marcar documento como lido",
+      "targets": [
+        ["linkText=Marcar documento como lido", "linkText"],
+        ["css=.dropdown-menu > .ng-star-inserted > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Marcar documento como lido')]", "xpath:link"],
+        ["xpath=//div[@id='frameTarefas']/div/div[3]/div[2]/ul/li/a", "xpath:idRelative"],
+        ["xpath=//div[3]/div[2]/ul/li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Marcar documento como lido')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "92bcba8b-a1f6-4ed3-ace8-74bfc54364f0",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,0)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5e61cb42-b2a8-4f14-953e-115072600780",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ng-star-inserted:nth-child(5) div > .tarefa-numero-processo",
+      "targets": [
+        ["css=.ng-star-inserted:nth-child(5) div > .tarefa-numero-processo", "css:finder"],
+        ["xpath=//div[@id='processosTarefa']/p-datalist/div/div/ul/li[5]/processo-datalist-card/div/div[3]/a/div/span[2]", "xpath:idRelative"],
+        ["xpath=//li[5]/processo-datalist-card/div/div[3]/a/div/span[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "be1af8c0-4cd1-45e9-b4d6-de1dfe95e68e",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.ng-star-inserted:nth-child(5) div > .tarefa-numero-processo",
+      "targets": [
+        ["css=.ng-star-inserted:nth-child(5) div > .tarefa-numero-processo", "css:finder"],
+        ["xpath=//div[@id='processosTarefa']/p-datalist/div/div/ul/li[5]/processo-datalist-card/div/div[3]/a/div/span[2]", "xpath:idRelative"],
+        ["xpath=//li[5]/processo-datalist-card/div/div[3]/a/div/span[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "69e80479-6ef8-457b-89e7-4a24d618f335",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=.ng-star-inserted:nth-child(5) div > .tarefa-numero-processo",
+      "targets": [
+        ["css=.ng-star-inserted:nth-child(5) div > .tarefa-numero-processo", "css:finder"],
+        ["xpath=//div[@id='processosTarefa']/p-datalist/div/div/ul/li[5]/processo-datalist-card/div/div[3]/a/div/span[2]", "xpath:idRelative"],
+        ["xpath=//li[5]/processo-datalist-card/div/div[3]/a/div/span[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d056ff60-59a6-467c-8622-bf44fcda8a1c",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ng-star-inserted:nth-child(6) div > .tarefa-numero-processo",
+      "targets": [
+        ["css=.ng-star-inserted:nth-child(6) div > .tarefa-numero-processo", "css:finder"],
+        ["xpath=//div[@id='processosTarefa']/p-datalist/div/div/ul/li[6]/processo-datalist-card/div/div[3]/a/div/span[2]", "xpath:idRelative"],
+        ["xpath=//li[6]/processo-datalist-card/div/div[3]/a/div/span[2]", "xpath:position"],
+        ["xpath=//span[contains(.,'IP 0702768-34.2024.8.07.0004 ')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "022aa023-f95e-4697-b266-790f9cd1300c",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.ng-star-inserted:nth-child(6) div > .tarefa-numero-processo",
+      "targets": [
+        ["css=.ng-star-inserted:nth-child(6) div > .tarefa-numero-processo", "css:finder"],
+        ["xpath=//div[@id='processosTarefa']/p-datalist/div/div/ul/li[6]/processo-datalist-card/div/div[3]/a/div/span[2]", "xpath:idRelative"],
+        ["xpath=//li[6]/processo-datalist-card/div/div[3]/a/div/span[2]", "xpath:position"],
+        ["xpath=//span[contains(.,'IP 0702768-34.2024.8.07.0004 ')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "22b5f934-6ff5-4f5c-97c9-b6e6fccd6455",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=.ng-star-inserted:nth-child(6) div > .tarefa-numero-processo",
+      "targets": [
+        ["css=.ng-star-inserted:nth-child(6) div > .tarefa-numero-processo", "css:finder"],
+        ["xpath=//div[@id='processosTarefa']/p-datalist/div/div/ul/li[6]/processo-datalist-card/div/div[3]/a/div/span[2]", "xpath:idRelative"],
+        ["xpath=//li[6]/processo-datalist-card/div/div[3]/a/div/span[2]", "xpath:position"],
+        ["xpath=//span[contains(.,'IP 0702768-34.2024.8.07.0004 ')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b88dc927-8e0d-4c3d-8004-f2505e6d69c9",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,0)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e133b2dd-868c-4ef6-87be-189ea5e047be",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ng-star-inserted:nth-child(7) div > .tarefa-numero-processo",
+      "targets": [
+        ["css=.ng-star-inserted:nth-child(7) div > .tarefa-numero-processo", "css:finder"],
+        ["xpath=//div[@id='processosTarefa']/p-datalist/div/div/ul/li[7]/processo-datalist-card/div/div[3]/a/div/span[2]", "xpath:idRelative"],
+        ["xpath=//li[7]/processo-datalist-card/div/div[3]/a/div/span[2]", "xpath:position"],
+        ["xpath=//span[contains(.,'IP 0704322-04.2024.8.07.0004 ')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "017c6889-8700-4597-b112-a7156ce39ab2",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,0)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "85743af2-3ca6-4d77-ac4e-4e9d0f1e2efa",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ng-star-inserted:nth-child(8) div > .tarefa-numero-processo",
+      "targets": [
+        ["css=.ng-star-inserted:nth-child(8) div > .tarefa-numero-processo", "css:finder"],
+        ["xpath=//div[@id='processosTarefa']/p-datalist/div/div/ul/li[8]/processo-datalist-card/div/div[3]/a/div/span[2]", "xpath:idRelative"],
+        ["xpath=//li[8]/processo-datalist-card/div/div[3]/a/div/span[2]", "xpath:position"],
+        ["xpath=//span[contains(.,'IP 0704755-08.2024.8.07.0004 ')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c3c0ead9-d755-42ea-a1d2-4adfc237a490",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,0)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "bb9c05a3-3b5d-4a23-8582-f603a35fe02c",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ng-star-inserted:nth-child(10) div > .tarefa-numero-processo",
+      "targets": [
+        ["css=.ng-star-inserted:nth-child(10) div > .tarefa-numero-processo", "css:finder"],
+        ["xpath=//div[@id='processosTarefa']/p-datalist/div/div/ul/li[10]/processo-datalist-card/div/div[3]/a/div/span[2]", "xpath:idRelative"],
+        ["xpath=//li[10]/processo-datalist-card/div/div[3]/a/div/span[2]", "xpath:position"],
+        ["xpath=//span[contains(.,'IP 0709272-90.2023.8.07.0004 ')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "3df99137-ef73-41fb-9999-69ca7d70a769",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,0)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4f7bcef6-ca23-4a15-a2cb-b15d6fafb430",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ng-star-inserted:nth-child(11) div > .tarefa-numero-processo",
+      "targets": [
+        ["css=.ng-star-inserted:nth-child(11) div > .tarefa-numero-processo", "css:finder"],
+        ["xpath=//div[@id='processosTarefa']/p-datalist/div/div/ul/li[11]/processo-datalist-card/div/div[3]/a/div/span[2]", "xpath:idRelative"],
+        ["xpath=//li[11]/processo-datalist-card/div/div[3]/a/div/span[2]", "xpath:position"],
+        ["xpath=//span[contains(.,'IP 0702730-22.2024.8.07.0004 ')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "0f309a19-cdbe-414b-9257-22763375f12e",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,0)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "bc4820e1-b2eb-4eca-ae87-09f679bd890b",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ng-star-inserted:nth-child(13) div > .tarefa-numero-processo",
+      "targets": [
+        ["css=.ng-star-inserted:nth-child(13) div > .tarefa-numero-processo", "css:finder"],
+        ["xpath=//div[@id='processosTarefa']/p-datalist/div/div/ul/li[13]/processo-datalist-card/div/div[3]/a/div/span[2]", "xpath:idRelative"],
+        ["xpath=//li[13]/processo-datalist-card/div/div[3]/a/div/span[2]", "xpath:position"],
+        ["xpath=//span[contains(.,'IP 0707684-14.2024.8.07.0004 ')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "fb95bb07-1c60-43ba-b79e-dc4dcabf9b23",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.ng-star-inserted:nth-child(13) div > .tarefa-numero-processo",
+      "targets": [
+        ["css=.ng-star-inserted:nth-child(13) div > .tarefa-numero-processo", "css:finder"],
+        ["xpath=//div[@id='processosTarefa']/p-datalist/div/div/ul/li[13]/processo-datalist-card/div/div[3]/a/div/span[2]", "xpath:idRelative"],
+        ["xpath=//li[13]/processo-datalist-card/div/div[3]/a/div/span[2]", "xpath:position"],
+        ["xpath=//span[contains(.,'IP 0707684-14.2024.8.07.0004 ')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "367e09b6-7016-456b-8b40-7436368cf3e8",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=.ng-star-inserted:nth-child(13) div > .tarefa-numero-processo",
+      "targets": [
+        ["css=.ng-star-inserted:nth-child(13) div > .tarefa-numero-processo", "css:finder"],
+        ["xpath=//div[@id='processosTarefa']/p-datalist/div/div/ul/li[13]/processo-datalist-card/div/div[3]/a/div/span[2]", "xpath:idRelative"],
+        ["xpath=//li[13]/processo-datalist-card/div/div[3]/a/div/span[2]", "xpath:position"],
+        ["xpath=//span[contains(.,'IP 0707684-14.2024.8.07.0004 ')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "8a36f666-72cc-4b21-9c28-035a4ce37f4f",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,0)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2936f40e-2395-471f-b710-e85216a62110",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ng-star-inserted:nth-child(14) div > .tarefa-numero-processo",
+      "targets": [
+        ["css=.ng-star-inserted:nth-child(14) div > .tarefa-numero-processo", "css:finder"],
+        ["xpath=//div[@id='processosTarefa']/p-datalist/div/div/ul/li[14]/processo-datalist-card/div/div[3]/a/div/span[2]", "xpath:idRelative"],
+        ["xpath=//li[14]/processo-datalist-card/div/div[3]/a/div/span[2]", "xpath:position"],
+        ["xpath=//span[contains(.,'IP 0710579-45.2024.8.07.0004 ')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "5e07164c-6f89-4a37-9db7-5e79b84aadfd",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,0)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "da15ad40-ac4f-49e7-8c0e-07ab5fd98fd7",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ng-star-inserted:nth-child(15) div > .tarefa-numero-processo",
+      "targets": [
+        ["css=.ng-star-inserted:nth-child(15) div > .tarefa-numero-processo", "css:finder"],
+        ["xpath=//div[@id='processosTarefa']/p-datalist/div/div/ul/li[15]/processo-datalist-card/div/div[3]/a/div/span[2]", "xpath:idRelative"],
+        ["xpath=//li[15]/processo-datalist-card/div/div[3]/a/div/span[2]", "xpath:position"],
+        ["xpath=//span[contains(.,'APOrd 0713036-84.2023.8.07.0004 ')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f9d71c3c-bf84-40ca-9074-6e12faa68729",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ng-star-inserted:nth-child(16) div > .tarefa-numero-processo",
+      "targets": [
+        ["css=.ng-star-inserted:nth-child(16) div > .tarefa-numero-processo", "css:finder"],
+        ["xpath=//div[@id='processosTarefa']/p-datalist/div/div/ul/li[16]/processo-datalist-card/div/div[3]/a/div/span[2]", "xpath:idRelative"],
+        ["xpath=//li[16]/processo-datalist-card/div/div[3]/a/div/span[2]", "xpath:position"],
+        ["xpath=//span[contains(.,'AcNãoPerPenal 0004206-49.2018.8.07.0004 ')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "309d8259-64f7-4058-af6f-7f9bf5f8e85d",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,0)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5c2a924f-6d0c-4099-8992-23d4f92304c5",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ng-star-inserted:nth-child(17) div > .tarefa-numero-processo",
+      "targets": [
+        ["css=.ng-star-inserted:nth-child(17) div > .tarefa-numero-processo", "css:finder"],
+        ["xpath=//div[@id='processosTarefa']/p-datalist/div/div/ul/li[17]/processo-datalist-card/div/div[3]/a/div/span[2]", "xpath:idRelative"],
+        ["xpath=//li[17]/processo-datalist-card/div/div[3]/a/div/span[2]", "xpath:position"],
+        ["xpath=//span[contains(.,'APOrd 0711104-03.2019.8.07.0004 ')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "bfcf9021-f4c8-4e17-842e-f731640d6d93",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.ng-star-inserted:nth-child(17) div > .tarefa-numero-processo",
+      "targets": [
+        ["css=.ng-star-inserted:nth-child(17) div > .tarefa-numero-processo", "css:finder"],
+        ["xpath=//div[@id='processosTarefa']/p-datalist/div/div/ul/li[17]/processo-datalist-card/div/div[3]/a/div/span[2]", "xpath:idRelative"],
+        ["xpath=//li[17]/processo-datalist-card/div/div[3]/a/div/span[2]", "xpath:position"],
+        ["xpath=//span[contains(.,'APOrd 0711104-03.2019.8.07.0004 ')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "44c52cad-dd01-4d75-86f5-61dc82b7d86d",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=.ng-star-inserted:nth-child(17) div > .tarefa-numero-processo",
+      "targets": [
+        ["css=.ng-star-inserted:nth-child(17) div > .tarefa-numero-processo", "css:finder"],
+        ["xpath=//div[@id='processosTarefa']/p-datalist/div/div/ul/li[17]/processo-datalist-card/div/div[3]/a/div/span[2]", "xpath:idRelative"],
+        ["xpath=//li[17]/processo-datalist-card/div/div[3]/a/div/span[2]", "xpath:position"],
+        ["xpath=//span[contains(.,'APOrd 0711104-03.2019.8.07.0004 ')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "1b51a7d9-7233-4e2a-860c-8dc33e574a46",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ng-star-inserted:nth-child(18) div > .tarefa-numero-processo",
+      "targets": [
+        ["css=.ng-star-inserted:nth-child(18) div > .tarefa-numero-processo", "css:finder"],
+        ["xpath=//div[@id='processosTarefa']/p-datalist/div/div/ul/li[18]/processo-datalist-card/div/div[3]/a/div/span[2]", "xpath:idRelative"],
+        ["xpath=//li[18]/processo-datalist-card/div/div[3]/a/div/span[2]", "xpath:position"],
+        ["xpath=//span[contains(.,'TCO 0707875-93.2023.8.07.0004 ')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "db9b35d1-ea5e-4471-afe1-12ea296006fa",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.ng-star-inserted:nth-child(18) div > .tarefa-numero-processo",
+      "targets": [
+        ["css=.ng-star-inserted:nth-child(18) div > .tarefa-numero-processo", "css:finder"],
+        ["xpath=//div[@id='processosTarefa']/p-datalist/div/div/ul/li[18]/processo-datalist-card/div/div[3]/a/div/span[2]", "xpath:idRelative"],
+        ["xpath=//li[18]/processo-datalist-card/div/div[3]/a/div/span[2]", "xpath:position"],
+        ["xpath=//span[contains(.,'TCO 0707875-93.2023.8.07.0004 ')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "eecb91e9-7854-474b-8402-9af0b223b2b8",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=.ng-star-inserted:nth-child(18) div > .tarefa-numero-processo",
+      "targets": [
+        ["css=.ng-star-inserted:nth-child(18) div > .tarefa-numero-processo", "css:finder"],
+        ["xpath=//div[@id='processosTarefa']/p-datalist/div/div/ul/li[18]/processo-datalist-card/div/div[3]/a/div/span[2]", "xpath:idRelative"],
+        ["xpath=//li[18]/processo-datalist-card/div/div[3]/a/div/span[2]", "xpath:position"],
+        ["xpath=//span[contains(.,'TCO 0707875-93.2023.8.07.0004 ')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "3a7176ac-148f-4849-bf7b-d4ce1f6d630c",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.btn-primary > .fa",
+      "targets": [
+        ["css=.btn-primary > .fa", "css:finder"],
+        ["xpath=//div[@id='frameTarefas']/div/div[3]/button[3]/i", "xpath:idRelative"],
+        ["xpath=//button[3]/i", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "62a962cb-4795-4b3f-bb3a-4f8059173d38",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=.btn-primary > .fa",
+      "targets": [
+        ["css=.btn-primary > .fa", "css:finder"],
+        ["xpath=//div[@id='frameTarefas']/div/div[3]/button[3]/i", "xpath:idRelative"],
+        ["xpath=//button[3]/i", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "c8849087-37fc-4900-b657-388f9956f0ca",
+    "name": "Clica no documento e copia texto",
+    "commands": [{
+      "id": "2ae25d5e-f574-4e2a-93aa-ac3f0984a893",
+      "comment": "",
+      "command": "open",
+      "target": "/pje/ng2/dev.seam",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4b5f8b99-8dd7-4184-acd7-1a7952627233",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1530x815",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "da146914-e586-493a-b5d0-f0918ca79731",
+      "comment": "",
+      "command": "selectFrame",
+      "target": "index=0",
+      "targets": [
+        ["index=0"]
+      ],
+      "value": ""
+    }, {
+      "id": "a03161c6-f933-4d7f-85b3-28a215e7cb55",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,0)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1c9cd442-0ae1-4201-9a14-30b6105884c5",
+      "comment": "",
+      "command": "click",
+      "target": "css=.col-md-4 .menuItem:nth-child(25) .nome",
+      "targets": [
+        ["css=.col-md-4 .menuItem:nth-child(25) .nome", "css:finder"],
+        ["xpath=(//div[@id='divTarefasPendentes']/div[4]/div[25]/div/a/div/span)[3]", "xpath:idRelative"],
+        ["xpath=//div[3]/tarefas/div/div[4]/div[25]/div/a/div/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9f2922e9-b2fd-4954-adcc-f9af348d24b3",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,0)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a4fcaa36-5b05-4bb2-9b1f-076fa9eed625",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.ng-star-inserted:nth-child(1) > .ng-star-inserted pje-lembretes > .btn",
+      "targets": [
+        ["css=.ng-star-inserted:nth-child(1) > .ng-star-inserted pje-lembretes > .btn", "css:finder"],
+        ["xpath=(//button[@type='button'])[10]", "xpath:attributes"],
+        ["xpath=//div[@id='processosTarefa']/p-datalist/div/div/ul/li/processo-datalist-card/div/div/div[2]/pje-lembretes/button", "xpath:idRelative"],
+        ["xpath=//pje-lembretes/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8c4c4a06-b48b-45b3-899c-ff6022e8b945",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=.ng-star-inserted:nth-child(1) > .ng-star-inserted pje-lembretes > .btn",
+      "targets": [
+        ["css=.ng-star-inserted:nth-child(1) > .ng-star-inserted pje-lembretes > .btn", "css:finder"],
+        ["xpath=(//button[@type='button'])[10]", "xpath:attributes"],
+        ["xpath=//div[@id='processosTarefa']/p-datalist/div/div/ul/li/processo-datalist-card/div/div/div[2]/pje-lembretes/button", "xpath:idRelative"],
+        ["xpath=//pje-lembretes/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2f6fe64e-6a22-4a70-8e87-9c0a63d39efa",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ng-star-inserted:nth-child(1) > .ng-star-inserted div > .tarefa-numero-processo",
+      "targets": [
+        ["css=.ng-star-inserted:nth-child(1) > .ng-star-inserted div > .tarefa-numero-processo", "css:finder"],
+        ["xpath=//div[@id='processosTarefa']/p-datalist/div/div/ul/li/processo-datalist-card/div/div[3]/a/div/span[2]", "xpath:idRelative"],
+        ["xpath=//div[3]/a/div/span[2]", "xpath:position"],
+        ["xpath=//span[contains(.,'AcNãoPerPenal 0711394-13.2022.8.07.0004 ')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "fcd7832e-a69d-4716-a4b5-083a8ebc501c",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.selecionado div > .tarefa-numero-processo",
+      "targets": [
+        ["css=.selecionado div > .tarefa-numero-processo", "css:finder"],
+        ["xpath=//div[@id='processosTarefa']/p-datalist/div/div/ul/li/processo-datalist-card/div/div[3]/a/div/span[2]", "xpath:idRelative"],
+        ["xpath=//div[3]/a/div/span[2]", "xpath:position"],
+        ["xpath=//span[contains(.,'AcNãoPerPenal 0711394-13.2022.8.07.0004 ')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "88b308a4-ecad-40c1-9a66-f759c1b8bed4",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=.selecionado div > .tarefa-numero-processo",
+      "targets": [
+        ["css=.selecionado div > .tarefa-numero-processo", "css:finder"],
+        ["xpath=//div[@id='processosTarefa']/p-datalist/div/div/ul/li/processo-datalist-card/div/div[3]/a/div/span[2]", "xpath:idRelative"],
+        ["xpath=//div[3]/a/div/span[2]", "xpath:position"],
+        ["xpath=//span[contains(.,'AcNãoPerPenal 0711394-13.2022.8.07.0004 ')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f7c458c0-ab50-43f9-a789-a1bad065e896",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "id=btnTransicoesTarefa",
+      "targets": [
+        ["id=btnTransicoesTarefa", "id"],
+        ["css=#btnTransicoesTarefa", "css:finder"],
+        ["xpath=//button[@id='btnTransicoesTarefa']", "xpath:attributes"],
+        ["xpath=//div[@id='frameTarefas']/div/div[3]/div[2]/button", "xpath:idRelative"],
+        ["xpath=//div[3]/div[2]/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7fbb12ad-c013-45c8-9ad4-4e77c05246fb",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "id=btnTransicoesTarefa",
+      "targets": [
+        ["id=btnTransicoesTarefa", "id"],
+        ["css=#btnTransicoesTarefa", "css:finder"],
+        ["xpath=//button[@id='btnTransicoesTarefa']", "xpath:attributes"],
+        ["xpath=//div[@id='frameTarefas']/div/div[3]/div[2]/button", "xpath:idRelative"],
+        ["xpath=//div[3]/div[2]/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ae6c324e-fb81-4ee9-88c4-f521d2586787",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.fa-share-square",
+      "targets": [
+        ["css=.fa-share-square", "css:finder"],
+        ["xpath=//button[@id='btnTransicoesTarefa']/i", "xpath:idRelative"],
+        ["xpath=//div[3]/div[2]/button/i", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "fcb792f4-358f-4769-a1a6-6bc1bb356c7e",
+      "comment": "",
+      "command": "click",
+      "target": "css=.fa-share-square",
+      "targets": [
+        ["css=.fa-share-square", "css:finder"],
+        ["xpath=//button[@id='btnTransicoesTarefa']/i", "xpath:idRelative"],
+        ["xpath=//div[3]/div[2]/button/i", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1ffd43b1-4f65-4e19-8b07-a08917a3d385",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=.fa-share-square",
+      "targets": [
+        ["css=.fa-share-square", "css:finder"],
+        ["xpath=//button[@id='btnTransicoesTarefa']/i", "xpath:idRelative"],
+        ["xpath=//div[3]/div[2]/button/i", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "069388f0-c378-415d-bae4-2d9730b76ba4",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.btn:nth-child(5)",
+      "targets": [
+        ["css=.btn:nth-child(5)", "css:finder"],
+        ["xpath=(//button[@type='button'])[183]", "xpath:attributes"],
+        ["xpath=//div[@id='frameTarefas']/div/div[3]/button[3]", "xpath:idRelative"],
+        ["xpath=//div[3]/button[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "afc091bb-0d3e-4929-a2af-4166dc2d59f7",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=.btn:nth-child(5)",
+      "targets": [
+        ["css=.btn:nth-child(5)", "css:finder"],
+        ["xpath=(//button[@type='button'])[183]", "xpath:attributes"],
+        ["xpath=//div[@id='frameTarefas']/div/div[3]/button[3]", "xpath:idRelative"],
+        ["xpath=//div[3]/button[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "639a62f5-be04-406f-97bc-92a50a4ef1a9",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "id=btnTransicoesTarefa",
+      "targets": [
+        ["id=btnTransicoesTarefa", "id"],
+        ["css=#btnTransicoesTarefa", "css:finder"],
+        ["xpath=//button[@id='btnTransicoesTarefa']", "xpath:attributes"],
+        ["xpath=//div[@id='frameTarefas']/div/div[3]/div[2]/button", "xpath:idRelative"],
+        ["xpath=//div[3]/div[2]/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ab078489-ae4a-4031-b968-7f80d438b511",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "id=btnTransicoesTarefa",
+      "targets": [
+        ["id=btnTransicoesTarefa", "id"],
+        ["css=#btnTransicoesTarefa", "css:finder"],
+        ["xpath=//button[@id='btnTransicoesTarefa']", "xpath:attributes"],
+        ["xpath=//div[@id='frameTarefas']/div/div[3]/div[2]/button", "xpath:idRelative"],
+        ["xpath=//div[3]/div[2]/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d7cc8f24-bd2c-424b-8491-12f6324a3644",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.btn-primary > .fa",
+      "targets": [
+        ["css=.btn-primary > .fa", "css:finder"],
+        ["xpath=//div[@id='frameTarefas']/div/div[3]/button[3]/i", "xpath:idRelative"],
+        ["xpath=//button[3]/i", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "dd7cfc60-0c07-4390-a865-459a81f15038",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=.btn-primary > .fa",
+      "targets": [
+        ["css=.btn-primary > .fa", "css:finder"],
+        ["xpath=//div[@id='frameTarefas']/div/div[3]/button[3]/i", "xpath:idRelative"],
+        ["xpath=//button[3]/i", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "56e37594-d7c1-4528-b1c9-208a23b4f81f",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["6e1d6e75-ee2a-4d1a-ba24-1ae77e09c088"]
+  }],
+  "urls": ["https://pje.tjdft.jus.br/"],
+  "plugins": []
+}
